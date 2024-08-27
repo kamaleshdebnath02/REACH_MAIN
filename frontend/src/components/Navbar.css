@@ -1,0 +1,103 @@
+.navbar {
+  background-color: #1E1E2F; /* Darker shade for the navbar */
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between; /* Ensures space between logo, nav-links, and dashboard */
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+/* Styling for the logo section */
+.navbar .logo {
+  display: flex;
+  align-items: center;
+}
+
+.navbar .logo img {
+  max-width: 50px;
+  height: auto;
+  margin-right: 10px; /* Space between logo image and text */
+}
+
+.navbar .logo h1 {
+  font-size: 1.5em;
+  color: #F1F1F1; /* Light text for contrast */
+}
+
+/* Styling for the navigation links */
+.navbar .nav-links {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar .nav-links li {
+  margin-left: 20px;
+}
+
+.navbar .nav-links li a {
+  color: #F1F1F1;
+  text-decoration: none;
+  font-size: 1em;
+  transition: color 0.3s ease-in-out;
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+
+.navbar .nav-links li a:hover {
+  background-color: #3D3D5C;
+  color: #F39C12; /* Bright color for hover effect */
+}
+
+/* Dashboard link styling */
+.dashboard-link {
+  margin-left: auto;
+  background-color: #F39C12; /* Bright color to make it stand out */
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.dashboard-link a {
+  color: #1E1E2F;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.dashboard-link a:hover {
+  background-color: #e08a0c;
+}
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+  .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  .navbar .nav-links {
+      flex-direction: column;
+      width: 100%;
+  }
+
+  .navbar .nav-links li {
+      margin-left: 0;
+      margin-bottom: 10px;
+  }
+
+  .navbar .nav-links li a {
+      width: 100%;
+      text-align: center;
+  }
+
+  .dashboard-link {
+      width: 100%;
+      text-align: center;
+      margin-top: 10px;
+  }
+}

@@ -1,0 +1,169 @@
+/* Reset some basic elements */
+body, h1, h2, h3, p {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Background and font color for the entire application */
+body {
+  background-color: #f4f4f9; /* Light gray background for a neutral look */
+  color: #333; /* Dark gray for text to ensure readability */
+  line-height: 1.6; /* More readable line height */
+  font-size: 16px; /* Standard font size for readability */
+}
+
+/* Styling for the main container of the app */
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Full viewport height */
+  padding-top: 70px; /* Adjust based on the height of your navbar */
+}
+
+/* Ensure content is centered and padding is consistent */
+.App > * {
+  padding: 20px; /* Consistent padding for all direct children */
+}
+
+/* Links styling */
+a {
+  color: #0056b3; /* Theme color for links */
+  text-decoration: none; /* No underline for a cleaner look */
+}
+
+a:hover {
+  text-decoration: underline; /* Underline on hover for better interaction feedback */
+}
+
+/* Add extra bottom padding to ensure footer doesn't overlap content on smaller screens */
+.footer {
+  padding-top: 20px;
+  margin-top: auto; /* Push footer to the bottom of the page */
+}
+
+/* Navbar styling */
+.navbar {
+  background-color: #1E1E2F; /* Darker shade for the navbar */
+  padding: 10px 20px; /* Padding for spacing */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  position: fixed; /* Fix the navbar at the top */
+  top: 0; /* Ensure it stays at the top */
+  width: 100%;
+  z-index: 1000; /* Ensure it stays on top */
+}
+
+/* Logo styling */
+.navbar .logo img {
+  max-width: 50px; /* Smaller logo size */
+  height: auto; /* Maintain aspect ratio */
+}
+
+/* Menu items styling */
+.navbar .menu {
+  list-style: none; /* Remove default list styling */
+  display: flex;
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+}
+
+/* Individual menu item styling */
+.navbar .menu li {
+  margin-left: 15px; /* Space between menu items */
+}
+
+/* Links styling */
+.navbar .menu li a {
+  color: #F1F1F1; /* Light text for contrast */
+  text-decoration: none; /* Remove underline */
+  font-size: 1em; /* Standard font size */
+  transition: color 0.3s ease-in-out; /* Smooth transition for color change */
+  padding: 10px 15px; /* Padding for better click area */
+  border-radius: 5px; /* Rounded corners */
+}
+
+.navbar .menu li a:hover {
+  background-color: #3D3D5C; /* Slightly lighter background on hover */
+  color: #F39C12; /* Bright color for hover effect */
+}
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column; /* Stack items vertically on small screens */
+    align-items: flex-start; /* Align items to the left */
+  }
+
+  .navbar .menu {
+    flex-direction: column; /* Stack menu items vertically */
+    width: 100%; /* Full width */
+  }
+
+  .navbar .menu li {
+    margin-left: 0; /* Remove left margin */
+    margin-bottom: 10px; /* Add bottom margin for spacing */
+  }
+
+  .navbar .menu li a {
+    width: 100%; /* Full width */
+    text-align: center; /* Center text */
+  }
+}
+
+/* Footer styling */
+.footer {
+  background-color: #2C3E50; /* Dark shade for footer to distinguish from main content */
+  color: #fff;
+  text-align: center;
+  padding: 20px 10px;
+  font-size: 0.9rem;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li {
+  display: inline; /* Inline display for a horizontal list */
+  margin: 0 10px;
+}
+
+.footer-links a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+.footer-links a:hover {
+  color: #F39C12; /* Bright color for hover effect */
+}
+
+.social-media-links {
+  margin-top: 10px;
+}
+
+.social-media-links a {
+  margin: 0 5px;
+}
+
+.social-media-links img {
+  width: 24px; /* Ensures icons are not too large */
+  height: auto;
+  vertical-align: middle;
+}
+
+/* Chat container styling */
+.chat-container {
+  padding-top: 60px; /* Adjust based on the height of your navbar */
+}

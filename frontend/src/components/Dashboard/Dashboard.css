@@ -1,0 +1,194 @@
+/* Dashboard container styling */
+.dashboard-container {
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    padding: 40px 20px;
+    min-height: 100vh;
+    color: #fff;
+}
+
+/* Dashboard title styling */
+.dashboard-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Dashboard description styling */
+.dashboard-description {
+    font-size: 1.2rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Card styling */
+.upload-card, .chart-card, .insights-card, .table-card {
+    background: #3d3d80;
+    border: none;
+    border-radius: 10px;
+    padding: 20px;
+    color: #fff;
+    box-shadow: 0 4px 15px rgba(15, 137, 202, 0.2);
+}
+
+/* File upload button styling */
+.file-upload-btn {
+    background-color: #2575fc;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.file-upload-btn:hover {
+    background-color: #6a11cb;
+}
+
+/* File name display styling */
+.file-name {
+    margin-top: 10px;
+    font-style: italic;
+    color: #b3b3b3;
+}
+
+/* Chart container styling */
+.chart-container {
+    margin-top: 20px;
+}
+
+/* Insights card styling */
+.insights-card p {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+.insights-card h4 {
+    margin-bottom: 20px;
+}
+
+/* Progress bar styling */
+.progress {
+    height: 20px;
+    background-color: #444;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.progress-bar {
+    background-color: #2575fc;
+}
+
+/* Data table styling */
+.data-table {
+    color: #fff;
+    background-color: #17345d;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.data-table th, .data-table td {
+    border: 1px solid #444;
+    padding: 10px;
+}
+
+.data-table thead th {
+    background-color: #2575fc;
+    color: #fff;
+    text-align: center;
+}
+
+.data-table tbody td {
+    text-align: center;
+}
+
+.data-table tbody tr:nth-child(even) {
+    background-color: #254978;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .dashboard-title {
+        font-size: 2rem;
+    }
+
+    .dashboard-description {
+        font-size: 1rem;
+    }
+
+    .upload-card, .chart-card, .insights-card, .table-card {
+        margin-bottom: 20px;
+    }
+
+    .file-upload-btn {
+        width: 100%;
+    }
+}
+.dashboard-container {
+    background-color: #274066;
+    padding: 20px;
+}
+
+.upload-card, .chart-card, .insights-card, .table-card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.dashboard-description {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.file-upload-btn {
+    margin-top: 10px;
+}
+
+.file-name {
+    margin-top: 10px;
+    color: #007bff;
+}
+
+.chart-container {
+    height: 400px;
+}
+
+.data-table {
+    margin-top: 20px;
+}
+
+.data-table th, .data-table td {
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+}
+
+.insights-card {
+    text-align: left;
+    background-color: #2b5b8b;
+}
+
+.table-card {
+    text-align: left;
+    background-color: #0c4074;
+}
+
+.table-card .data-table th {
+    background-color: #007bff;
+    color: rgb(158, 111, 111);
+}
+
+.table-card .data-table td {
+    background-color: #b3d8f8;
+    color: rgb(60, 96, 162);
+}

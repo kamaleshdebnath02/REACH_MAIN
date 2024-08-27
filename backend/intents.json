@@ -1,0 +1,2141 @@
+{
+    "intents": [
+      {
+        "tag": "greeting",
+        "patterns": ["Hello", "Hi", "Hey", "Hola", "Good morning", "Good afternoon"],
+        "responses": ["Hello! How can I assist you today?", "Hi there! How can I help you?", "Greetings! How can I be of service?"]
+      },
+      {
+        "tag": "goodbye",
+        "patterns": ["Goodbye", "See you later", "Bye", "Have a nice day"],
+        "responses": ["Goodbye! Take care!", "See you later! Stay healthy!", "Bye! Feel free to come back if you have more questions."]
+      },
+      {
+        "tag": "tell_name",
+        "patterns": ["My name is {name}", "I am {name}", "You can call me {name}"],
+        "responses": ["Nice to meet you, {name}!", "Hello, {name}!", "Great to know your name, {name}!"],
+        "action": "remember_name"
+      },
+      {
+        "tag": "thanks",
+        "patterns": ["Thanks", "Thank you", "That's helpful", "Thanks a lot"],
+        "responses": ["You're welcome!", "Happy to help!", "Anytime!"]
+      },
+      {
+        "tag": "covid",
+        "patterns": ["covid", "covid19 precaution image", "coronavirus", "covid-19"],
+        "responses": ["Here is some information about COVID-19."],
+        "image": "images/covid19.png"
+      },
+      {
+        "tag": "healthy_health",
+        "patterns": ["healthy tips image", "health tips image", "how to stay healthy"],
+        "responses": ["Here are some tips for maintaining a healthy lifestyle."],
+        "image": "images/healthy.png"
+      },
+      {
+        "tag": "stress",
+        "patterns": ["stress relief image", "how to dealing with stress image", "how to manage stress image"],
+        "responses": ["Here are some tips on how to manage stress effectively."],
+        "image": "images/stress.png"
+      },
+      {
+        "tag": "fatigue",
+        "patterns": ["fatigue relief image", "tiredness relief image", "how to overcome fatigue image"],
+        "responses": ["Here are some tips on how to overcome fatigue."],
+        "image": "images/fatigue.png"
+      },
+      {
+        "tag": "vitamin_d",
+        "patterns": ["vitamin D image", "vitamin d deficiency", "how to get vitamin D image"],
+        "responses": ["Here is some information about Vitamin D and how to ensure you are getting enough."],
+        "image": "images/vitamind.png"
+      },
+      {
+        "tag": "hydration",
+        "patterns": ["hydration image", "staying hydrated image", "how to stay hydrated image"],
+        "responses": ["Here are some tips on staying hydrated."],
+        "image": "images/hydration.png"
+      },
+      {
+        "tag": "sound_body",
+        "patterns": ["how to have sound body image", "weight loss image", "maintaining a sound body image"],
+        "responses": ["Here are some tips on maintaining a sound body."],
+        "image": "images/soundbody.png"
+      },
+      {
+        "tag": "weakness",
+        "patterns": ["I feel weak", "I'm feeling weak", "What to do for weakness?", "How to overcome weakness?"],
+        "responses": [
+          "Feeling weak can be due to various reasons. Ensure you are well hydrated and consume balanced meals. Have you tried eating bananas, almonds, or a spoonful of honey? They are great for quick energy.",
+          "Weakness can be combated by staying hydrated and consuming nutrient-rich foods. A mixture of jaggery and water can help boost energy levels."
+        ]
+      },
+      {
+        "tag": "iron_deficiency",
+        "patterns": ["What is iron deficiency?", "Symptoms of iron deficiency", "How to treat iron deficiency?"],
+        "responses": [
+          "Iron deficiency anemia occurs when your body lacks enough iron. Symptoms include fatigue, weakness, pale skin, and shortness of breath. To increase iron levels, consume foods like spinach, lentils, and jaggery.",
+          "Iron deficiency can lead to symptoms like tiredness and dizziness. Including foods like beetroot, pomegranate, and dates in your diet can help improve your iron levels."
+        ]
+      },
+      {
+        "tag": "common_cold",
+        "patterns": ["What is common cold?", "Symptoms of common cold", "How to treat common cold?"],
+        "responses": [
+          "The common cold is a viral infection of your nose and throat. Symptoms include a runny nose, sore throat, cough, and congestion. Drinking warm water with honey and ginger can soothe a sore throat.",
+          "Common cold symptoms include a runny nose, sneezing, and congestion. Inhaling steam with eucalyptus oil can help relieve nasal congestion."
+        ]
+      },
+      {
+        "tag": "headache",
+        "patterns": ["I have a headache", "How to cure a headache?", "What to do for headache?"],
+        "responses": [
+          "Headaches can be relieved by staying hydrated, resting in a dark room, and applying a cold or warm compress to your head or neck. You can also try drinking ginger tea.",
+          "For headaches, ensure you are well-hydrated and take breaks from screens. Applying a paste of cinnamon and water on the forehead can help alleviate pain."
+        ]
+      },
+      {
+        "tag": "stomach_ache",
+        "patterns": ["I have a stomach ache", "How to cure a stomach ache?", "What to do for stomach ache?"],
+        "responses": [
+          "Stomach aches can be caused by various factors. Drinking warm water with ajwain (carom seeds) and a pinch of salt can provide relief.",
+          "For stomach ache, try drinking buttermilk with a pinch of black salt and roasted cumin powder. It helps in digestion and provides relief."
+        ]
+      },
+      {
+        "tag": "fever",
+        "patterns": ["I have a fever", "How to treat a fever?", "What to do for fever?"],
+        "responses": [
+          "Fever can be a sign of infection. Rest, stay hydrated, and take over-the-counter fever reducers. You can also try drinking tulsi (holy basil) tea to help bring down the fever.",
+          "For fever, keep yourself hydrated and rest. Drinking a decoction made of giloy, tulsi, and black pepper can help reduce fever."
+        ]
+      },
+      {
+        "tag": "cough",
+        "patterns": ["I have a cough", "How to treat a cough?", "What to do for cough?"],
+        "responses": [
+          "Coughing can be alleviated by drinking warm fluids and using honey and ginger. A mixture of honey and turmeric in warm milk can be very effective.",
+          "For cough relief, try drinking hot water mixed with lemon and honey. It soothes the throat and provides relief from coughing."
+        ]
+      },
+      {
+        "tag": "sore_throat",
+        "patterns": ["I have a sore throat", "How to treat a sore throat?", "What to do for sore throat?"],
+        "responses": [
+          "Sore throat can be soothed by gargling with warm salt water and drinking herbal teas. A mixture of honey and ginger juice can provide relief.",
+          "For a sore throat, drinking warm turmeric milk can help. Turmeric has anti-inflammatory properties that soothe the throat."
+        ]
+      },
+      {
+        "tag": "indigestion",
+        "patterns": ["I have indigestion", "How to treat indigestion?", "What to do for indigestion?"],
+        "responses": [
+          "Indigestion can be relieved by drinking a mixture of lemon juice and ginger juice. Also, eating fennel seeds after meals helps in digestion.",
+          "For indigestion, try drinking a glass of warm water with a tablespoon of apple cider vinegar before meals. It helps in better digestion."
+        ]
+      },
+      {
+        "tag": "fatigue",
+        "patterns": ["I feel tired", "How to overcome fatigue?", "What to do for fatigue?"],
+        "responses": [
+          "Fatigue can be overcome by ensuring adequate rest and hydration. Eating foods rich in iron and magnesium, like spinach and almonds, can help boost energy levels.",
+          "To combat fatigue, include foods like bananas, oatmeal, and yogurt in your diet. They provide sustained energy throughout the day."
+        ]
+      },
+      {
+        "tag": "diet",
+        "patterns": ["diet", "balanced diet"],
+        "responses": [
+            "Here's a weekly diet plan comprising low-cost Indian food full of nutrients:\n\nDay 1:\n- Breakfast: Poha\n- Lunch: Dal, Rice, and Vegetable Curry\n- Dinner: Roti, Sabzi, and Curd\n\nDay 2:\n- Breakfast: Upma\n- Lunch: Rajma Chawal\n- Dinner: Bajra Roti and Mixed Vegetables\n\nDay 3:\n- Breakfast: Idli\n- Lunch: Chana Masala and Rice\n- Dinner: Roti, Sabzi, and Salad\n\nDay 4:\n- Breakfast: Paratha with Curd\n- Lunch: Sambar and Rice\n- Dinner: Khichdi\n\nDay 5:\n- Breakfast: Oats\n- Lunch: Kadhi and Rice\n- Dinner: Roti, Dal, and Sabzi\n\nDay 6:\n- Breakfast: Moong Dal Cheela\n- Lunch: Vegetable Pulao\n- Dinner: Roti, Sabzi, and Raita\n\nDay 7:\n- Breakfast: Porridge\n- Lunch: Vegetable Khichdi\n- Dinner: Roti, Sabzi, and Dal"
+        ]
+    },
+    {
+        "tag": "protein",
+        "patterns": ["protein","how to get protein"],
+        "responses": [
+            "For a protein-rich diet, you can include these low-cost Indian foods:\n\n- Lentils (Dal)\n- Chickpeas (Chana)\n- Kidney Beans (Rajma)\n- Paneer (Cottage Cheese)\n- Eggs\n- Yogurt (Dahi)\n- Soybeans\n- Tofu\n- Nuts and Seeds\n- Milk"
+        ]
+    },
+    {
+        "tag": "vitamins",
+        "patterns": ["vitamins","how to get vitamin"],
+        "responses": [
+            "For a diet rich in vitamins, include these foods:\n\n- Spinach\n- Carrots\n- Sweet Potatoes\n- Mangoes\n- Oranges\n- Bananas\n- Tomatoes\n- Papayas\n- Broccoli\n- Bell Peppers"
+        ]
+    },
+    {
+        "tag": "minerals",
+        "patterns": ["minerals","how to get minerals"],
+        "responses": [
+            "To boost your mineral intake, try these foods:\n\n- Nuts and Seeds\n- Whole Grains\n- Beans and Lentils\n- Dark Leafy Greens\n- Fish\n- Yogurt\n- Cheese\n- Eggs\n- Tofu\n- Avocados"
+        ]
+    },
+    {
+        "tag": "fiber",
+        "patterns": ["fiber","how to get fiber"],
+        "responses": [
+            "For a fiber-rich diet, consider these foods:\n\n- Whole Grains (Oats, Barley)\n- Fruits (Apples, Bananas, Oranges)\n- Vegetables (Carrots, Beets, Broccoli)\n- Legumes (Beans, Lentils, Chickpeas)\n- Nuts and Seeds\n- Sweet Potatoes\n- Peas\n- Berries\n- Avocado\n- Pears"
+        ]
+    },
+    {
+        "tag": "hydration",
+        "patterns": ["hydration"],
+        "responses": [
+            "Stay hydrated by consuming these foods and drinks:\n\n- Watermelon\n- Cucumbers\n- Oranges\n- Strawberries\n- Water\n- Coconut Water\n- Soups\n- Smoothies\n- Celery\n- Tomatoes"
+        ]
+    },
+    {
+        "tag": "snacks",
+        "patterns": ["snacks","healthy snacks"],
+        "responses": [
+            "Healthy snack options include:\n\n- Fruits (Apple Slices, Banana)\n- Nuts and Seeds\n- Yogurt with Berries\n- Carrot and Cucumber Sticks\n- Roasted Chickpeas\n- Hummus with Veggies\n- Popcorn\n- Smoothies\n- Whole Grain Crackers\n- Dates"
+        ]
+    },
+    {
+        "tag": "breakfast",
+        "patterns": ["breakfast","what to eat for breakfast","healthy breakfast"],
+        "responses": [
+            "Nutritious breakfast options:\n\n- Oatmeal\n- Upma\n- Poha\n- Smoothies\n- Paratha with Curd\n- Idli\n- Dosa\n- Moong Dal Cheela\n- Porridge\n- Eggs with Whole Grain Toast"
+        ]
+    },
+    {
+        "tag": "lunch",
+        "patterns": ["lunch","what to eat for lunch","healthy lunch"],
+        "responses": [
+            "Healthy lunch ideas:\n\n- Dal and Rice\n- Roti and Sabzi\n- Vegetable Pulao\n- Chana Masala and Rice\n- Rajma Chawal\n- Sambar and Rice\n- Mixed Vegetable Curry\n- Kadhi and Rice\n- Khichdi\n- Paneer Curry with Roti"
+        ]
+    },
+    {
+        "tag": "dinner",
+        "patterns": ["dinner","healthy dinner","what to eat for dinner"],
+        "responses": [
+            "Healthy dinner suggestions:\n\n- Roti and Sabzi\n- Dal and Rice\n- Bajra Roti with Mixed Vegetables\n- Khichdi\n- Roti, Dal, and Sabzi\n- Vegetable Pulao\n- Vegetable Curry with Roti\n- Paneer Curry\n- Lentil Soup\n- Stir-Fried Vegetables"
+        ]
+    },
+    {
+        "tag": "weightloss",
+        "patterns": ["weight loss","how to loss weight"],
+        "responses": [
+            "For a weight loss diet, focus on these foods:\n\n- Fruits (Apples, Berries, Grapefruit)\n- Vegetables (Broccoli, Spinach, Kale)\n- Lean Proteins (Chicken, Fish, Lentils)\n- Whole Grains (Brown Rice, Quinoa, Oats)\n- Nuts and Seeds\n- Greek Yogurt\n- Green Tea\n- Cottage Cheese\n- Avocados\n- Legumes"
+        ]
+    },
+    {
+        "tag": "weightgain",
+        "patterns": ["weight gain","how to gain weight"],
+        "responses": [
+            "For a weight gain diet, include these foods:\n\n- Nuts and Nut Butters\n- Full-Fat Dairy (Milk, Cheese, Yogurt)\n- Healthy Fats (Olive Oil, Avocado)\n- Whole Grains (Brown Rice, Quinoa, Whole Wheat Bread)\n- Protein Shakes\n- Lean Meat\n- Eggs\n- Potatoes and Starches\n- Beans and Legumes\n- Dried Fruits"
+        ]
+    },
+    {
+        "tag": "hearthealth",
+        "patterns": ["heart health","healthy heart"],
+        "responses": [
+            "For heart health, consider these foods:\n\n- Oats\n- Berries\n- Dark Chocolate\n- Fatty Fish (Salmon, Mackerel)\n- Nuts (Almonds, Walnuts)\n- Seeds (Chia, Flax)\n- Avocado\n- Beans\n- Leafy Greens\n- Olive Oil"
+        ]
+    },
+    {
+        "tag": "immunity",
+        "patterns": ["immunity","how to gain immunity"],
+        "responses": [
+            "Boost your immunity with these foods:\n\n- Citrus Fruits (Oranges, Lemons)\n- Red Bell Peppers\n- Broccoli\n- Garlic\n- Ginger\n- Spinach\n- Yogurt\n- Almonds\n- Turmeric\n- Green Tea"
+        ]
+    },
+    {
+        "tag": "bonehealth",
+        "patterns": ["bone health"],
+        "responses": [
+            "For strong bones, include these foods:\n\n- Dairy (Milk, Cheese, Yogurt)\n- Leafy Greens (Kale, Spinach)\n- Fish (Salmon, Sardines)\n- Nuts (Almonds, Walnuts)\n- Seeds (Chia, Flax)\n- Tofu\n- Broccoli\n- Sweet Potatoes\n- Oranges\n- Beans"
+        ]
+    },
+    {
+        "tag": "diabetes",
+        "patterns": ["diabetes","what to eat in diabetes"],
+        "responses": [
+            "Manage diabetes with these foods:\n\n- Leafy Greens\n- Whole Grains\n- Berries\n- Greek Yogurt\n- Nuts\n- Fish\n- Chia Seeds\n- Flax Seeds\n- Beans\n- Oats"
+        ]
+    },
+    {
+        "tag": "hydration",
+        "patterns": ["hydration","how to stay hydrated"],
+        "responses": [
+            "Stay hydrated by consuming these foods and drinks:\n\n- Watermelon\n- Cucumbers\n- Oranges\n- Strawberries\n- Water\n- Coconut Water\n- Soups\n- Smoothies\n- Celery\n- Tomatoes"
+        ]
+    },
+    {
+        "tag": "snacks",
+        "patterns": ["snacks"],
+        "responses": [
+            "Healthy snack options include:\n\n- Fruits (Apple Slices, Banana)\n- Nuts and Seeds\n- Yogurt with Berries\n- Carrot and Cucumber Sticks\n- Roasted Chickpeas\n- Hummus with Veggies\n- Popcorn\n- Smoothies\n- Whole Grain Crackers\n- Dates"
+        ]
+    },
+    {
+        "tag": "mentalhealth",
+        "patterns": ["mentalhealth"],
+        "responses": [
+            "Support your mental health with these foods:\n\n- Fatty Fish\n- Dark Chocolate\n- Berries\n- Nuts\n- Seeds\n- Whole Grains\n- Leafy Greens\n- Yogurt\n- Beans\n- Avocados"
+        ]
+    },
+    {
+        "tag": "energyboost",
+        "patterns": ["energyboost"],
+        "responses": [
+            "Boost your energy with these foods:\n\n- Bananas\n- Apples\n- Oats\n- Yogurt\n- Spinach\n- Eggs\n- Nuts\n- Chia Seeds\n- Dark Chocolate\n- Green Tea"
+        ]
+    },
+    {
+        "tag": "digestion",
+        "patterns": ["digestion"],
+        "responses": [
+            "Improve digestion with these foods:\n\n- Yogurt\n- Apples\n- Bananas\n- Whole Grains\n- Ginger\n- Papaya\n- Leafy Greens\n- Chia Seeds\n- Fennel Seeds\n- Water"
+        ]
+    },
+    {
+        "tag": "skinhealth",
+        "patterns": ["skinhealth"],
+        "responses": [
+            "For healthy skin, eat these foods:\n\n- Avocados\n- Walnuts\n- Sunflower Seeds\n- Sweet Potatoes\n- Red Bell Peppers\n- Broccoli\n- Tomatoes\n- Dark Chocolate\n- Green Tea\n- Fatty Fish"
+        ]
+    },
+    {
+        "tag": "hairhealth",
+        "patterns": ["hairhealth"],
+        "responses": [
+            "For healthy hair, include these foods:\n\n- Eggs\n- Berries\n- Spinach\n- Fatty Fish\n- Sweet Potatoes\n- Avocados\n- Nuts\n- Seeds\n- Sweet Peppers\n- Beans"
+        ]
+    },
+    {
+        "tag": "pregnancy",
+        "patterns": ["pregnancy"],
+        "responses": [
+            "For a healthy pregnancy, eat these foods:\n\n- Dairy Products\n- Legumes\n- Sweet Potatoes\n- Salmon\n- Eggs\n- Leafy Greens\n- Berries\n- Whole Grains\n- Avocados\n- Dried Fruit"
+        ]
+    },
+    {
+        "tag": "anemia",
+        "patterns": ["anemia"],
+        "responses": [
+            "To combat anemia, include these iron-rich foods:\n\n- Spinach\n- Red Meat\n- Pumpkin Seeds\n- Quinoa\n- Turkey\n- Broccoli\n- Tofu\n- Dark Chocolate\n- Fish\n- Lentils"
+        ]
+    },
+    {
+        "tag": "stressrelief",
+        "patterns": ["stressrelief"],
+        "responses": [
+            "For stress relief, consider these foods:\n\n- Dark Chocolate\n- Chamomile Tea\n- Yogurt\n- Fatty Fish\n- Blueberries\n- Almonds\n- Oranges\n- Spinach\n- Avocados\n- Whole Grains"
+        ]
+    },
+    {
+        "tag": "sleep",
+        "patterns": ["sleep"],
+        "responses": [
+            "For better sleep, try these foods:\n\n- Almonds\n- Turkey\n- Chamomile Tea\n- Kiwi\n- Tart Cherry Juice\n- Fatty Fish\n- Walnuts\n- Passionflower Tea\n- White Rice\n- Bananas"
+        ]
+    },
+    {
+        "tag": "detox",
+        "patterns": ["detox"],
+        "responses": [
+            "For detoxification, consume these foods:\n\n- Lemon Water\n- Ginger\n- Green Tea\n- Garlic\n- Beets\n- Apples\n- Turmeric\n- Carrots\n- Spinach\n- Cucumbers"
+        ]
+    },
+    {
+        "tag": "eyesight",
+        "patterns": ["eyesight"],
+        "responses": [
+            "For better eyesight, eat these foods:\n\n- Carrots\n- Fish\n- Eggs\n- Leafy Greens\n- Citrus Fruits\n- Nuts\n- Seeds\n- Beef\n- Sweet Potatoes\n- Legumes"
+        ]
+    },
+    {
+        "tag": "arthritis",
+        "patterns": ["arthritis"],
+        "responses": [
+            "For arthritis relief, include these anti-inflammatory foods:\n\n- Fatty Fish\n- Cherries\n- Broccoli\n- Walnuts\n- Berries\n- Spinach\n- Grapes\n- Olive Oil\n- Tart Cherry Juice\n- Green Tea"
+        ]
+    },
+    {
+        "tag": "cholesterol",
+        "patterns": ["cholesterol","how to manage cholestrol?"],
+        "responses": [
+            "To manage cholesterol, eat these foods:\n\n- Oats\n- Barley\n- Beans\n- Nuts\n- Apples\n- Grapes\n- Strawberries\n- Citrus Fruits\n- Fatty Fish\n- Avocados"
+        ]
+    },
+    {
+        "tag": "constipation",
+        "patterns": ["constipation"],
+        "responses": [
+            "For constipation relief, try these high-fiber foods:\n\n- Prunes\n- Apples\n- Pears\n- Kiwi\n- Figs\n- Leafy Greens\n- Beans\n- Lentils\n- Sweet Potatoes\n- Water"
+        ]
+    },
+    {
+        "tag": "allergies",
+        "patterns": ["allergies"],
+        "responses": [
+            "For allergy relief, eat these anti-inflammatory foods:\n\n- Ginger\n- Turmeric\n- Fatty Fish\n- Apples\n- Leafy Greens\n- Garlic\n- Yogurt\n- Citrus Fruits\n- Honey\n- Nuts"
+        ]
+    },
+    {
+        "tag": "asthma",
+        "patterns": ["asthma"],
+        "responses": [
+            "For asthma management, include these foods:\n\n- Ginger\n- Turmeric\n- Fatty Fish\n- Spinach\n- Apples\n- Bananas\n- Leafy Greens\n- Garlic\n- Yogurt\n- Berries"
+        ]
+    },
+    {
+        "tag": "anxiety",
+        "patterns": ["anxiety"],
+        "responses": [
+            "To help with anxiety, try these foods:\n\n- Chamomile Tea\n- Dark Chocolate\n- Yogurt\n- Salmon\n- Turmeric\n- Green Tea\n- Blueberries\n- Spinach\n- Almonds\n- Oranges"
+        ]
+    },
+    {
+        "tag": "depression",
+        "patterns": ["depression"],
+        "responses": [
+            "For depression support, include these foods:\n\n- Fatty Fish\n- Dark Chocolate\n- Berries\n- Nuts\n- Seeds\n- Whole Grains\n- Leafy Greens\n- Yogurt\n- Beans\n- Avocados"
+        ]
+    },
+    {
+        "tag": "memory",
+        "patterns": ["memory"],
+        "responses": [
+            "Boost your memory with these foods:\n\n- Fatty Fish\n- Blueberries\n- Turmeric\n- Broccoli\n- Pumpkin Seeds\n- Dark Chocolate\n- Oranges\n- Nuts\n- Eggs\n- Green Tea"
+        ]
+    },
+    {
+        "tag": "inflammation",
+        "patterns": ["inflammation"],
+        "responses": [
+            "To reduce inflammation, eat these foods:\n\n- Berries\n- Fatty Fish\n- Broccoli\n- Avocados\n- Green Tea\n- Peppers\n- Mushrooms\n- Grapes\n- Turmeric\n- Tomatoes"
+        ]
+    },
+      {
+        "tag": "health_info",
+        "patterns": ["Tell me about diabetes", "What is hypertension?", "Give me information about heart diseases", "Explain asthma"],
+        "responses": ["Sure, let me fetch some information for you.", "Here's what I found about it.", "Let me get some details for you."]
+      },
+      {
+        "tag": "translate",
+        "patterns": ["Translate hello to Bengali", "How do you say thank you in Assamese?", "Translate 'good morning' to Spanish"],
+        "responses": ["Let me translate that for you.", "Here's the translation:", "Sure, here's how you say it:"]
+      },
+      {
+        "tag": "health_tips",
+        "patterns": ["Give me some health tips", "How to stay healthy?", "Tips for a healthy lifestyle"],
+        "responses": ["Drink plenty of water, exercise regularly, and eat a balanced diet.", "Maintain a healthy weight, avoid smoking, and get regular check-ups.", "Stay active, eat fruits and vegetables, and get enough sleep."]
+      },
+      {
+        "tag": "appointment",
+        "patterns": ["I need to book an appointment", "Schedule a check-up", "Book a visit to the doctor"],
+        "responses": ["Sure, I can help with that. Please provide your details.", "Let's schedule your appointment. Can you share your contact information?", "I'll need some information to book your appointment. Please provide your name and preferred date."]
+      },
+      {
+        "tag": "symptoms",
+        "patterns": ["I have a headache", "I'm feeling dizzy", "What should I do if I have a fever?", "My stomach hurts"],
+        "responses": ["It sounds like you might need some rest and hydration. If symptoms persist, consult a doctor.", "Please make sure to rest and stay hydrated. If it gets worse, seek medical attention.", "I'm not a doctor, but I recommend consulting with a healthcare professional if you feel unwell."]
+      },
+      {
+        "tag": "contact",
+        "patterns": ["How can I contact you?", "What is your email?", "Do you have a phone number?", "I need help with something"],
+        "responses": ["You can reach us at contact@reachhealth.com", "Our phone number is (123) 456-7890", "Feel free to email us at support@reachhealth.com"]
+      },
+      {
+        "tag": "thanks",
+        "patterns": ["Thanks", "Thank you", "That's helpful", "Thanks a lot"],
+        "responses": ["You're welcome!", "Happy to help!", "Anytime!"]
+      },
+      {
+        "tag": "health_info",
+        "patterns": ["Tell me about diabetes", "What is hypertension?", "Give me information about heart diseases", "Explain asthma"],
+        "responses": ["Here's what I found about it.", "Let me get some details for you."]
+      },
+      {
+        "tag": "translate",
+        "patterns": ["Translate hello to Bengali", "How do you say thank you in Assamese?", "Translate 'good morning' to Spanish"],
+        "responses": ["Let me translate that for you.", "Here's the translation:", "Sure, here's how you say it:"]
+      },
+      {
+        "tag": "health_tips",
+        "patterns": ["Give me some health tips", "How to stay healthy?", "Tips for a healthy lifestyle"],
+        "responses": ["Drink plenty of water, exercise regularly, and eat a balanced diet.", "Maintain a healthy weight, avoid smoking, and get regular check-ups.", "Stay active, eat fruits and vegetables, and get enough sleep."]
+      },
+      {
+        "tag": "appointment",
+        "patterns": ["I need to book an appointment", "Schedule a check-up", "Book a visit to the doctor"],
+        "responses": ["Sure, I can help with that. Please provide your details.", "Let's schedule your appointment. Can you share your contact information?", "I'll need some information to book your appointment. Please provide your name and preferred date."]
+      },
+      {
+        "tag": "symptoms",
+        "patterns": ["I have a headache", "I'm feeling dizzy", "What should I do if I have a fever?", "My stomach hurts"],
+        "responses": ["It sounds like you might need some rest and hydration. If symptoms persist, consult a doctor.", "Please make sure to rest and stay hydrated. If it gets worse, seek medical attention.", "I'm not a doctor, but I recommend consulting with a healthcare professional if you feel unwell."]
+      },
+      {
+        "tag": "contact",
+        "patterns": ["How can I contact you?", "What is your email?", "Do you have a phone number?", "I need help with something"],
+        "responses": ["You can reach us at contact@reachhealth.com", "Our phone number is (123) 456-7890", "Feel free to email us at support@reachhealth.com"]
+      },
+      {
+        "tag": "exercise",
+        "patterns": ["What are good exercises?", "Recommend some workouts", "How to stay fit?", "Exercise routines"],
+        "responses": ["You can try walking, running, yoga, or strength training.", "Consistency is key. Try to exercise at least 30 minutes a day.", "Mix cardio, strength training, and flexibility exercises for a balanced routine."]
+      },
+      {
+        "tag": "diet",
+        "patterns": ["What should I eat?", "Healthy diet tips", "Nutrition advice", "Balanced diet","diet"],
+        "responses": ["Include a variety of fruits, vegetables, whole grains, and lean proteins in your diet.", "Stay hydrated and avoid processed foods."]
+      },
+      {
+        "tag": "mental_health",
+        "patterns": ["How to manage stress?", "Mental health tips", "Dealing with anxiety", "Tips for mental well-being"],
+        "responses": ["Practice mindfulness and meditation.", "Stay connected with friends and family."]
+      },
+      {
+        "tag": "vaccination",
+        "patterns": ["Vaccination schedule", "Do I need a flu shot?", "Vaccine information", "COVID-19 vaccine"],
+        "responses": ["Vaccinations are important to prevent diseases. Consult your doctor for a schedule.", "The flu shot is recommended annually for most people.", "Stay informed about COVID-19 vaccines and follow health guidelines."]
+      },
+      {
+        "tag": "emergency",
+        "patterns": ["Emergency contact", "What to do in an emergency?", "Emergency number", "Help in an emergency"],
+        "responses": ["In an emergency, call 911 or your local emergency number.", "Stay calm and follow the instructions of emergency personnel.", "Have an emergency kit ready and know your emergency contacts."]
+      },
+      {
+        "tag": "first_aid",
+        "patterns": ["How to treat a burn?", "What to do for a cut?", "First aid for choking"],
+        "responses": ["For burns, cool the area with running water and cover with a clean cloth.", "For cuts, clean the wound and apply pressure to stop the bleeding.", "For choking, use the Heimlich maneuver or call emergency services if needed."]
+      },
+      {
+        "tag": "hydration",
+        "patterns": ["How much water should I drink?", "Staying hydrated", "Benefits of drinking water", "Water intake advice"],
+        "responses": ["Aim to drink at least 8 glasses of water a day.", "Stay hydrated, especially in hot weather or when exercising.", "Water helps maintain bodily functions and energy levels."]
+      },
+      {
+        "tag": "sleep",
+        "patterns": ["How to improve sleep?", "Tips for better sleep", "Dealing with insomnia", "Healthy sleep habits"],
+        "responses": ["Maintain a regular sleep schedule.", "Create a relaxing bedtime routine and avoid screens before bed.", "If you have persistent sleep issues, consult a healthcare professional."]
+      },
+      {
+        "tag": "medication",
+        "patterns": ["How to take medication?", "Medication advice", "Prescription information", "Safe medication use"],
+        "responses": ["Follow your doctor's instructions and the prescription label.", "Store medications properly and keep them out of reach of children.", "Never share prescription medications with others."]
+      },
+      {
+        "tag": "nutrition",
+        "patterns": ["What are essential nutrients?", "Nutritional advice", "Importance of vitamins", "Minerals for health"],
+        "responses": ["Essential nutrients include carbohydrates, proteins, fats, vitamins, and minerals.", "A balanced diet helps ensure you get all the nutrients you need.", "Consider supplements if recommended by a healthcare professional."]
+      },
+      {
+        "tag": "fitness_goals",
+        "patterns": ["Setting fitness goals", "How to stay motivated to exercise?", "Achieving fitness milestones", "Fitness planning"],
+        "responses": ["Set realistic and achievable fitness goals.", "Track your progress and celebrate milestones.", "Stay motivated by varying your routine and finding an exercise you enjoy."]
+      },
+      {
+        "tag": "heart_health",
+        "patterns": ["Tips for a healthy heart", "Heart disease prevention", "Cardiovascular health", "How to maintain heart health"],
+        "responses": ["Eat a heart-healthy diet, exercise regularly, and avoid smoking.", "Manage stress and get regular health check-ups.", "Know your family history and be aware of heart disease symptoms."]
+      },
+      {
+        "tag": "bone_health",
+        "patterns": ["How to maintain bone health?", "Bone density tips", "Preventing osteoporosis", "Calcium for bones"],
+        "responses": ["Get enough calcium and vitamin D.", "Engage in weight-bearing exercises and avoid smoking.", "Consult your doctor about bone density tests."]
+      },
+      {
+        "tag": "skin_care",
+        "patterns": ["Skin care tips", "How to treat acne?", "Healthy skin routine", "Sun protection advice"],
+        "responses": ["Cleanse your skin gently and moisturize regularly.", "Use sunscreen to protect your skin from UV damage.", "Consult a dermatologist for specific skin concerns."]
+      },
+      {
+        "tag": "eye_health",
+        "patterns": ["How to protect eyesight?", "Eye health tips", "Preventing eye strain", "Healthy vision advice"],
+        "responses": ["Take regular breaks from screens to prevent eye strain.", "Wear sunglasses to protect your eyes from UV rays.", "Get regular eye exams to monitor your vision."]
+      },
+      {
+        "tag": "dental_health",
+        "patterns": ["Dental care tips", "How to brush teeth properly?", "Flossing advice", "Preventing cavities"],
+        "responses": ["Brush your teeth twice a day and floss daily.", "Use fluoride toothpaste and visit your dentist regularly.", "Limit sugary foods and drinks to prevent cavities."]
+      },
+      {
+        "tag": "pregnancy",
+        "patterns": ["Pregnancy tips", "Healthy pregnancy advice", "Prenatal care", "What to expect during pregnancy"],
+        "responses": ["Eat a balanced diet and take prenatal vitamins.", "Attend regular prenatal check-ups.", "Avoid harmful substances and follow your doctor's advice."]
+      },
+      {
+        "tag": "child_health",
+        "patterns": ["Child health tips", "How to care for a newborn?", "Childhood vaccinations", "Healthy habits for kids"],
+        "responses": ["Ensure your child gets regular check-ups and vaccinations.", "Provide a balanced diet and encourage physical activity.", "Create a safe and loving environment for your child."]
+      },
+      {
+        "tag": "allergies",
+        "patterns": ["How to manage allergies?", "Allergy symptoms", "Allergy medication", "Preventing allergic reactions"],
+        "responses": ["Identify and avoid allergy triggers.", "Use prescribed medications to manage symptoms.", "Consult an allergist for personalized advice."]
+      },
+      {
+        "tag": "cold_flu",
+        "patterns": ["Cold and flu prevention", "Treating a cold", "Flu symptoms", "How to recover from a cold"],
+        "responses": ["Wash your hands regularly and avoid close contact with sick individuals.", "Rest, stay hydrated, and use over-the-counter medications to relieve symptoms.", "Consult a doctor if symptoms worsen."]
+      },
+      {
+        "tag": "back_pain",
+        "patterns": ["How to relieve back pain?", "Preventing back pain", "Exercises for back pain", "Back pain treatment"],
+        "responses": ["Practice good posture and avoid heavy lifting.", "Exercise regularly to strengthen your back muscles.", "Consult a doctor if pain persists."]
+      },
+      {
+        "tag": "injury_prevention",
+        "patterns": ["Preventing sports injuries", "How to avoid injuries?", "Safety tips", "Injury prevention advice"],
+        "responses": ["Warm up before physical activities and use proper equipment.", "Follow safety guidelines and listen to your body.", "Take breaks and avoid overexertion."]
+      },
+      {
+        "tag": "weight_management",
+        "patterns": ["Tips for weight loss", "How to gain weight healthily?", "Maintaining a healthy weight", "Weight management advice"],
+        "responses": ["Adopt a balanced diet and regular exercise routine.", "Set realistic goals and track your progress.", "Consult a healthcare professional for personalized advice."]
+      },
+      {
+        "tag": "cholesterol",
+        "patterns": ["How to lower cholesterol?", "Cholesterol management", "Healthy cholesterol levels", "Diet for cholesterol"],
+        "responses": ["Eat a diet rich in fruits, vegetables, and whole grains.", "Limit saturated fats and avoid trans fats.", "Exercise regularly and consult your doctor."]
+      },
+      {
+        "tag": "blood_pressure",
+        "patterns": ["How to lower blood pressure?", "Managing hypertension", "Healthy blood pressure levels", "Blood pressure tips"],
+        "responses": ["Reduce salt intake and eat a balanced diet.", "Exercise regularly and maintain a healthy weight.", "Monitor your blood pressure and follow your doctor's advice."]
+      },
+      {
+        "tag": "diabetes",
+        "patterns": ["Managing diabetes", "Diabetes diet tips", "How to control blood sugar?", "Living with diabetes"],
+        "responses": ["Follow a healthy diet and monitor your blood sugar levels.", "Exercise regularly and take prescribed medications.", "Consult your doctor for personalized advice."]
+      },
+      {
+        "tag": "arthritis",
+        "patterns": ["How to manage arthritis?", "Arthritis pain relief", "Exercises for arthritis", "Living with arthritis"],
+        "responses": ["Stay active and maintain a healthy weight.", "Use pain relief methods and medications as prescribed.", "Consult a rheumatologist for personalized advice."]
+      },
+      {
+        "tag": "asthma",
+        "patterns": ["Managing asthma", "Asthma symptoms", "Asthma treatment", "Preventing asthma attacks"],
+        "responses": ["Use prescribed inhalers and avoid triggers.", "Follow your asthma action plan and monitor your symptoms.", "Consult your doctor for personalized advice."]
+      },
+      {
+        "tag": "stroke",
+        "patterns": ["Stroke prevention", "Recognizing stroke symptoms", "Stroke treatment", "Living after a stroke"],
+        "responses": ["Know the FAST symptoms: Face drooping, Arm weakness, Speech difficulty, Time to call 911.", "Adopt a healthy lifestyle to reduce risk.", "Follow your doctor's rehabilitation plan."]
+      },
+      {
+        "tag": "cancer",
+        "patterns": ["Cancer prevention tips", "Cancer treatment options", "Living with cancer", "Cancer symptoms"],
+        "responses": ["Maintain a healthy diet and avoid tobacco.", "Follow your doctor's treatment plan.", "Seek support from healthcare professionals and support groups."]
+      },
+      {
+        "tag": "immunization",
+        "patterns": ["Immunization schedule", "Vaccine information", "Why are vaccines important?", "Child immunization"],
+        "responses": ["Follow the recommended immunization schedule.", "Vaccines help prevent serious diseases.", "Consult your healthcare provider for specific vaccine recommendations."]
+      },
+      {
+        "tag": "sexual_health",
+        "patterns": ["Tips for safe sex", "Sexual health advice", "Preventing STIs", "Birth control options"],
+        "responses": ["Use condoms to reduce the risk of STIs.", "Get regular sexual health check-ups.", "Discuss birth control options with your healthcare provider."]
+      },
+      {
+        "tag": "menopause",
+        "patterns": ["Managing menopause symptoms", "What to expect during menopause?", "Menopause treatment", "Living with menopause"],
+        "responses": ["Maintain a healthy lifestyle and stay active.", "Consult your doctor for symptom management.", "Seek support from healthcare professionals and support groups."]
+      },
+      {
+        "tag": "hair_loss",
+        "patterns": ["How to prevent hair loss?", "Treating hair loss", "Hair care tips", "Hair loss remedies"],
+        "responses": ["Maintain a healthy diet and avoid excessive styling.", "Consult a dermatologist for treatment options.", "Consider using gentle hair care products."]
+      },
+      {
+        "tag": "hearing_loss",
+        "patterns": ["Preventing hearing loss", "Hearing aids information", "Treating hearing loss", "Living with hearing loss"],
+        "responses": ["Protect your ears from loud noises.", "Get regular hearing check-ups.", "Consult an audiologist for treatment options."]
+      },
+      {
+        "tag": "vision_loss",
+        "patterns": ["Preventing vision loss", "Living with vision loss", "Vision aids information", "Treating vision loss"],
+        "responses": ["Get regular eye exams and protect your eyes from UV rays.", "Use vision aids as recommended by your eye doctor.", "Seek support from vision loss organizations."]
+      },
+      {
+        "tag": "fatigue",
+        "patterns": ["How to deal with fatigue?", "Causes of fatigue", "Fatigue treatment", "Tips for managing fatigue"],
+        "responses": ["Ensure you get enough rest and manage stress.", "Maintain a balanced diet and stay hydrated.", "Consult your doctor if fatigue persists."]
+      },
+      {
+        "tag": "dehydration",
+        "patterns": ["Preventing dehydration", "Dehydration symptoms", "Treating dehydration", "Staying hydrated"],
+        "responses": ["Drink plenty of water throughout the day.", "Recognize signs of dehydration such as dry mouth and dizziness.", "Seek medical help if dehydration is severe."]
+      },
+      {
+        "tag": "nutrition_labels",
+        "patterns": ["How to read nutrition labels?", "Understanding food labels", "What to look for on nutrition labels?", "Interpreting food label information"],
+        "responses": ["Pay attention to serving size, calories, and nutrient information.", "Look for low levels of saturated fat, trans fat, and sodium.", "Check for essential vitamins and minerals."]
+      },
+      {
+        "tag": "smoking",
+        "patterns": ["Tips to quit smoking", "How to stop smoking?", "Effects of smoking", "Smoking cessation advice"],
+        "responses": ["Seek support from healthcare professionals and support groups.", "Consider using nicotine replacement therapy.", "Adopt healthy habits to replace smoking."]
+      },
+      {
+        "tag": "alcohol",
+        "patterns": ["How to reduce alcohol consumption?", "Effects of alcohol", "Alcohol addiction treatment", "Tips for cutting back on alcohol"],
+        "responses": ["Set limits and stick to them.", "Seek support from healthcare professionals and support groups.", "Replace alcohol with healthy alternatives."]
+      },
+      {
+        "tag": "drug_use",
+        "patterns": ["How to avoid drug use?", "Effects of drug use", "Drug addiction treatment", "Preventing drug abuse"],
+        "responses": ["Stay informed about the risks of drug use.", "Seek support from healthcare professionals and support groups.", "Adopt healthy habits and coping mechanisms."]
+      },
+      {
+        "tag": "anemia",
+        "patterns": ["What is anemia?", "Anemia symptoms", "Treating anemia", "Anemia prevention"],
+        "responses": ["Anemia is a condition where you lack enough healthy red blood cells.", "Common symptoms include fatigue and weakness.", "Consult your doctor for treatment options."]
+      },
+      {
+        "tag": "thyroid",
+        "patterns": ["What is hypothyroidism?", "Hyperthyroidism symptoms", "Thyroid disease treatment", "Living with thyroid disease"],
+        "responses": ["Thyroid disease affects your body's metabolism.", "Symptoms can include weight changes and fatigue.", "Consult your doctor for diagnosis and treatment."]
+      },
+      {
+        "tag": "gut_health",
+        "patterns": ["Tips for a healthy gut", "What is gut microbiome?", "Gut health and diet", "Improving digestion"],
+        "responses": ["Eat a diet rich in fiber and probiotics.", "Stay hydrated and manage stress.", "Consult your doctor for personalized advice."]
+      },
+      {
+        "tag": "kidney_health",
+        "patterns": ["How to maintain kidney health?", "Preventing kidney disease", "Kidney disease symptoms", "Diet for healthy kidneys"],
+        "responses": ["Stay hydrated and avoid excessive salt.", "Maintain a healthy diet and weight.", "Consult your doctor for regular kidney function tests."]
+      },
+      {
+        "tag": "liver_health",
+        "patterns": ["Tips for a healthy liver", "Preventing liver disease", "Liver disease symptoms", "Diet for liver health"],
+        "responses": ["Limit alcohol intake and avoid risky behaviors.", "Eat a balanced diet and maintain a healthy weight.", "Consult your doctor for regular liver function tests."]
+      },
+      {
+        "tag": "cholesterol_management",
+        "patterns": ["How to manage cholesterol?", "Cholesterol medication", "Healthy cholesterol levels", "Cholesterol diet tips"],
+        "responses": ["Follow a heart-healthy diet and exercise regularly.", "Take prescribed medications as directed by your doctor.", "Monitor your cholesterol levels regularly."]
+      },
+      {
+        "tag": "blood_sugar",
+        "patterns": ["Managing blood sugar", "Healthy blood sugar levels", "Blood sugar diet tips", "Preventing high blood sugar"],
+        "responses": ["Eat a balanced diet and monitor your blood sugar levels.", "Exercise regularly and take prescribed medications.", "Consult your doctor for personalized advice."]
+      },
+      {
+        "tag": "immune_system",
+        "patterns": ["How to boost immune system?", "Immune system health", "Diet for immune system", "Preventing infections"],
+        "responses": ["Eat a balanced diet rich in fruits and vegetables.", "Stay active and get enough sleep.", "Practice good hygiene and stay up to date with vaccinations."]
+      },
+      {
+        "tag": "wellness",
+        "patterns": ["Tips for overall wellness", "Wellness routines", "How to stay well?", "Wellness advice"],
+        "responses": ["Maintain a balanced diet and stay active.", "Practice mindfulness and manage stress.", "Get regular check-ups and stay connected with loved ones."]
+      },
+      {
+        "tag": "hydration_reminders",
+        "patterns": ["Remind me to drink water", "Hydration reminders", "Stay hydrated tips", "Water intake reminders"],
+        "responses": ["Remember to drink water regularly throughout the day.", "Stay hydrated to maintain your health.", "Set reminders to drink water, especially during hot weather or exercise."]
+      },
+      {
+        "tag": "activity_reminders",
+        "patterns": ["Remind me to stay active", "Exercise reminders", "Stay active tips", "Physical activity reminders"],
+        "responses": ["Remember to stay active and take breaks to move around.", "Incorporate physical activity into your daily routine.", "Set reminders for regular exercise to maintain your health."]
+      },
+      {
+        "tag": "health_checkups",
+        "patterns": ["Schedule health check-ups", "Regular health screenings", "Importance of check-ups", "Health check-up reminders"],
+        "responses": ["Schedule regular check-ups with your healthcare provider.", "Health screenings help detect issues early.", "Set reminders for your next health check-up."]
+      },
+      {
+        "tag": "emotional_wellbeing",
+        "patterns": ["Tips for emotional wellbeing", "Emotional health advice", "How to improve emotional wellbeing?", "Managing emotions"],
+        "responses": ["Practice mindfulness and stress management techniques.", "Stay connected with friends and family.", "Seek support from mental health professionals if needed."]
+      },
+      {
+        "tag": "mindfulness",
+        "patterns": ["Mindfulness tips", "How to practice mindfulness?", "Benefits of mindfulness", "Mindfulness exercises"],
+        "responses": ["Practice deep breathing and meditation.", "Stay present and focus on the moment.", "Incorporate mindfulness into your daily routine."]
+      },
+      {
+        "tag": "relaxation",
+        "patterns": ["Tips for relaxation", "How to relax?", "Relaxation techniques", "Stress relief advice"],
+        "responses": ["Practice deep breathing and relaxation exercises.", "Take breaks and engage in activities you enjoy.", "Create a relaxing environment and get enough rest."]
+      },
+      {
+        "tag": "gratitude",
+        "patterns": ["Gratitude exercises", "Benefits of gratitude", "How to practice gratitude?", "Gratitude tips"],
+        "responses": ["Keep a gratitude journal and write down things you're thankful for.", "Express gratitude to others.", "Practice gratitude daily to improve your wellbeing."]
+      },
+      {
+        "tag": "positive_thinking",
+        "patterns": ["Positive thinking tips", "How to stay positive?", "Benefits of positive thinking", "Practicing positive thinking"],
+        "responses": ["Focus on the positive aspects of your life.", "Practice positive affirmations and self-talk.", "Surround yourself with positive people."]
+      },
+      {
+        "tag": "self_care",
+        "patterns": ["Self-care tips", "How to practice self-care?", "Importance of self-care", "Self-care routines"],
+        "responses": ["Make time for activities you enjoy.", "Take care of your physical, emotional, and mental health.", "Set boundaries and prioritize self-care."]
+      },
+      {
+        "tag": "goal_setting",
+        "patterns": ["Tips for goal setting", "How to set goals?", "Achieving goals advice", "Setting and reaching goals"],
+        "responses": ["Set SMART goals: Specific, Measurable, Achievable, Relevant, Time-bound.", "Break your goals into smaller steps.", "Track your progress and celebrate achievements."]
+      },
+      {
+        "tag": "procrastination",
+        "patterns": ["How to overcome procrastination?", "Tips to stop procrastinating", "Dealing with procrastination", "Productivity advice"],
+        "responses": ["Set clear goals and prioritize tasks.", "Break tasks into smaller steps and take action.", "Eliminate distractions and create a productive environment."]
+      },
+      {
+        "tag": "time_management",
+        "patterns": ["Time management tips", "How to manage time?", "Improving time management", "Effective time management"],
+        "responses": ["Use a planner or calendar to organize your tasks.", "Set priorities and focus on important tasks.", "Take breaks and avoid multitasking."]
+      },
+      {
+        "tag": "work_life_balance",
+        "patterns": ["Tips for work-life balance", "How to achieve work-life balance?", "Balancing work and life", "Work-life balance advice"],
+        "responses": ["Set boundaries between work and personal life.", "Make time for self-care and leisure activities.", "Communicate your needs and prioritize what's important."]
+      },
+      {
+        "tag": "productivity",
+        "patterns": ["Productivity tips", "How to be more productive?", "Improving productivity", "Productivity hacks"],
+        "responses": ["Set clear goals and prioritize tasks.", "Eliminate distractions and focus on one task at a time.", "Take breaks to recharge and maintain productivity."]
+      },
+      {
+        "tag": "motivation",
+        "patterns": ["Tips for staying motivated", "How to stay motivated?", "Motivation advice", "Finding motivation"],
+        "responses": ["Set clear and achievable goals.", "Celebrate small wins and track your progress.", "Stay positive and surround yourself with supportive people."]
+      },
+      {
+        "tag": "creativity",
+        "patterns": ["How to boost creativity?", "Tips for creativity", "Creative thinking advice", "Improving creativity"],
+        "responses": ["Engage in activities that inspire you.", "Take breaks and allow your mind to wander.", "Collaborate with others and seek new experiences."]
+      },
+      {
+        "tag": "leadership",
+        "patterns": ["Leadership tips", "How to be a good leader?", "Improving leadership skills", "Leadership advice"],
+        "responses": ["Lead by example and inspire others.", "Communicate effectively and listen to your team.", "Encourage collaboration and provide support."]
+      },
+      {
+        "tag": "teamwork",
+        "patterns": ["Tips for teamwork", "How to work well in a team?", "Improving teamwork", "Team collaboration advice"],
+        "responses": ["Communicate openly and respect others' opinions.", "Collaborate and share responsibilities.", "Support your team members and work towards common goals."]
+      },
+      {
+        "tag": "conflict_resolution",
+        "patterns": ["Tips for conflict resolution", "How to resolve conflicts?", "Dealing with conflicts", "Conflict resolution advice"],
+        "responses": ["Communicate openly and listen to all parties.", "Focus on finding a solution, not blaming.", "Seek common ground and compromise when necessary."]
+      },
+      {
+        "tag": "networking",
+        "patterns": ["Networking tips", "How to network effectively?", "Building professional connections", "Networking advice"],
+        "responses": ["Attend industry events and join professional groups.", "Build genuine relationships and offer help.", "Follow up and stay in touch with your contacts."]
+      },
+      {
+        "tag": "career_development",
+        "patterns": ["Career development tips", "How to advance in your career?", "Improving career prospects", "Career growth advice"],
+        "responses": ["Set career goals and seek learning opportunities.", "Network and build professional relationships.", "Seek feedback and be open to new challenges."]
+      },
+      {
+        "tag": "job_search",
+        "patterns": ["Job search tips", "How to find a job?", "Improving job search", "Job hunting advice"],
+        "responses": ["Tailor your resume and cover letter for each job application.", "Use job search engines and networking.", "Prepare for interviews and follow up with employers."]
+      },
+      {
+        "tag": "interview_tips",
+        "patterns": ["Interview tips", "How to prepare for an interview?", "Improving interview skills", "Interview advice"],
+        "responses": ["Research the company and the role.", "Practice common interview questions.", "Be confident and communicate your strengths."]
+      },
+      {
+        "tag": "resume_tips",
+        "patterns": ["Resume tips", "How to write a resume?", "Improving resume", "Resume writing advice"],
+        "responses": ["Tailor your resume for the job you're applying for.", "Highlight your skills and accomplishments.", "Keep it concise and error-free."]
+      },
+      {
+        "tag": "cover_letter",
+        "patterns": ["Cover letter tips", "How to write a cover letter?", "Improving cover letter", "Cover letter advice"],
+        "responses": ["Tailor your cover letter for the job you're applying for.", "Highlight your relevant skills and experiences.", "Keep it concise and professional."]
+      },
+      {
+        "tag": "networking_events",
+        "patterns": ["Networking event tips", "How to prepare for networking events?", "Improving networking skills", "Networking event advice"],
+        "responses": ["Research the event and plan your goals.", "Practice your elevator pitch and bring business cards.", "Follow up with the contacts you make."]
+      },
+      {
+        "tag": "public_speaking",
+        "patterns": ["Public speaking tips", "How to improve public speaking?", "Overcoming public speaking fear", "Public speaking advice"],
+        "responses": ["Practice regularly and prepare thoroughly.", "Focus on your message and engage with the audience.", "Seek feedback and work on improving."]
+      },
+      {
+        "tag": "presentation_skills",
+        "patterns": ["Presentation skills tips", "How to improve presentation skills?", "Effective presentations", "Presentation advice"],
+        "responses": ["Plan and organize your content.", "Use visual aids and engage with your audience.", "Practice and seek feedback."]
+      },
+      {
+        "tag": "writing_skills",
+        "patterns": ["Writing skills tips", "How to improve writing?", "Effective writing advice", "Writing improvement"],
+        "responses": ["Write regularly and read widely.", "Seek feedback and work on your weaknesses.", "Use clear and concise language."]
+      },
+      {
+        "tag": "time_management_skills",
+        "patterns": ["Time management skills tips", "How to manage time effectively?", "Improving time management skills", "Time management advice"],
+        "responses": ["Prioritize tasks and set clear goals.", "Use time management tools and techniques.", "Take breaks and avoid multitasking."]
+      },
+      {
+        "tag": "organization_skills",
+        "patterns": ["Organization skills tips", "How to stay organized?", "Improving organization skills", "Organization advice"],
+        "responses": ["Use planners and to-do lists.", "Keep your workspace tidy and organized.", "Set goals and break tasks into manageable steps."]
+      },
+      {
+        "tag": "stress_management",
+        "patterns": ["Stress management tips", "How to manage stress?", "Dealing with stress", "Stress relief advice"],
+        "responses": ["Practice relaxation techniques and mindfulness.", "Stay active and maintain a healthy lifestyle.", "Seek support from friends, family, or professionals."]
+      },
+      {
+        "tag": "physical_health_problems",
+        "patterns": ["Physical health problems and solutions", "What are common physical health issues?", "How to solve physical health problems?"],
+        "responses": ["Common physical health problems include chronic pain, injuries, and illnesses. Solutions often involve a combination of medical treatment, physical therapy, and lifestyle changes."]
+      },
+      {
+        "tag": "balanced_diet",
+        "patterns": ["What is a balanced diet?", "How to eat a balanced diet?", "Tips for a balanced diet"],
+        "responses": ["A balanced diet includes a variety of foods from all the food groups: fruits, vegetables, protein, dairy, and grains. It's important to eat the right proportions and ensure nutrient diversity."]
+      },
+      {
+        "tag": "regular_exercise",
+        "patterns": ["Importance of regular exercise", "Benefits of regular exercise", "How to exercise regularly?"],
+        "responses": ["Regular exercise is crucial for maintaining physical and mental health. It helps manage weight, strengthens the heart and muscles, and reduces stress."]
+      },
+      {
+        "tag": "cardiovascular_health",
+        "patterns": ["Tips for cardiovascular health", "How to improve heart health?", "Cardiovascular health advice"],
+        "responses": ["Maintain a healthy diet, exercise regularly, avoid smoking, and manage stress to improve cardiovascular health. Regular check-ups are also important."]
+      },
+      {
+        "tag": "diabetes_management",
+        "patterns": ["How to manage diabetes?", "Diabetes management tips", "Living with diabetes"],
+        "responses": ["Managing diabetes involves monitoring blood sugar levels, eating a balanced diet, exercising regularly, and taking prescribed medications."]
+      },
+      {
+        "tag": "hypertension_control",
+        "patterns": ["How to control hypertension?", "Hypertension management tips", "Lowering blood pressure"],
+        "responses": ["Control hypertension by reducing salt intake, maintaining a healthy weight, exercising regularly, and following your doctor's advice."]
+      },
+      {
+        "tag": "weight_loss",
+        "patterns": ["How to lose weight?", "Weight loss tips", "Effective weight loss strategies"],
+        "responses": ["Effective weight loss involves a combination of a healthy diet, regular physical activity, and behavioral changes. It's important to set realistic goals and track your progress."]
+      },
+      {
+        "tag": "nutritional_supplements",
+        "patterns": ["What are nutritional supplements?", "Should I take supplements?", "Benefits of nutritional supplements"],
+        "responses": ["Nutritional supplements can help fill gaps in your diet. It's best to consult with a healthcare provider to determine if you need them and which ones are appropriate."]
+      },
+      {
+        "tag": "healthy_eating_habits",
+        "patterns": ["Tips for healthy eating", "How to develop healthy eating habits?", "Healthy eating advice"],
+        "responses": ["Develop healthy eating habits by planning your meals, eating a variety of foods, staying hydrated, and avoiding processed foods."]
+      },
+      {
+        "tag": "physical_fitness",
+        "patterns": ["How to improve physical fitness?", "Physical fitness tips", "Maintaining physical fitness"],
+        "responses": ["Improve physical fitness by engaging in regular exercise, including strength training, cardio, and flexibility exercises. Consistency is key."]
+      },
+      {
+        "tag": "obesity_prevention",
+        "patterns": ["How to prevent obesity?", "Tips for preventing obesity", "Obesity prevention advice"],
+        "responses": ["Prevent obesity by maintaining a balanced diet, staying physically active, and monitoring your weight regularly. Avoid high-calorie, low-nutrient foods."]
+      },
+      {
+        "tag": "cholesterol_levels",
+        "patterns": ["How to manage cholesterol levels?", "Cholesterol level tips", "Maintaining healthy cholesterol levels"],
+        "responses": ["Manage cholesterol by eating a heart-healthy diet, exercising regularly, avoiding trans fats, and taking prescribed medications if necessary."]
+      },
+      {
+        "tag": "heart_disease_prevention",
+        "patterns": ["How to prevent heart disease?", "Heart disease prevention tips", "Preventing heart disease"],
+        "responses": ["Prevent heart disease by maintaining a healthy diet, exercising regularly, avoiding smoking, and managing stress. Regular health check-ups are also important."]
+      },
+      {
+        "tag": "bone_health",
+        "patterns": ["Tips for bone health", "How to maintain healthy bones?", "Improving bone health"],
+        "responses": ["Maintain bone health by getting enough calcium and vitamin D, engaging in weight-bearing exercises, and avoiding smoking and excessive alcohol consumption."]
+      },
+      {
+        "tag": "joint_pain_relief",
+        "patterns": ["How to relieve joint pain?", "Joint pain relief tips", "Managing joint pain"],
+        "responses": ["Relieve joint pain through regular exercise, maintaining a healthy weight, using hot and cold therapy, and taking anti-inflammatory medications as needed."]
+      },
+      {
+        "tag": "chronic_pain_management",
+        "patterns": ["Tips for managing chronic pain", "How to manage chronic pain?", "Chronic pain relief"],
+        "responses": ["Manage chronic pain by working with healthcare professionals, using medications, physical therapy, and alternative therapies like acupuncture and mindfulness."]
+      },
+      {
+        "tag": "sleep_apnea",
+        "patterns": ["What is sleep apnea?", "Sleep apnea treatment", "Managing sleep apnea"],
+        "responses": ["Sleep apnea is a condition where breathing repeatedly stops and starts during sleep. Treatment options include lifestyle changes, CPAP machines, and surgery."]
+      },
+      {
+        "tag": "respiratory_health",
+        "patterns": ["Tips for respiratory health", "How to improve lung health?", "Maintaining respiratory health"],
+        "responses": ["Improve respiratory health by not smoking, avoiding pollutants, staying active, and practicing deep breathing exercises."]
+      },
+      {
+        "tag": "asthma_control",
+        "patterns": ["How to control asthma?", "Asthma management tips", "Living with asthma"],
+        "responses": ["Control asthma by avoiding triggers, taking prescribed medications, and following your asthma action plan. Regular check-ups are important."]
+      },
+      {
+        "tag": "smoking_cessation",
+        "patterns": ["Tips to quit smoking", "How to stop smoking?", "Smoking cessation advice"],
+        "responses": ["Quit smoking by seeking support from healthcare professionals, using nicotine replacement therapy, and finding alternative ways to cope with stress."]
+      },
+      {
+        "tag": "alcohol_abuse_treatment",
+        "patterns": ["How to treat alcohol abuse?", "Alcohol abuse treatment options", "Overcoming alcohol addiction"],
+        "responses": ["Treat alcohol abuse by seeking support from healthcare professionals, attending support groups, and possibly using medications to reduce cravings."]
+      },
+      {
+        "tag": "substance_abuse",
+        "patterns": ["How to prevent substance abuse?", "Substance abuse prevention tips", "Managing substance abuse"],
+        "responses": ["Prevent substance abuse by staying informed about the risks, seeking support from healthcare professionals, and engaging in healthy activities."]
+      },
+      {
+        "tag": "drug_addiction_recovery",
+        "patterns": ["How to recover from drug addiction?", "Drug addiction recovery tips", "Overcoming drug addiction"],
+        "responses": ["Recover from drug addiction by seeking professional help, attending support groups, and adopting healthy lifestyle changes."]
+      },
+      {
+        "tag": "cancer_prevention",
+        "patterns": ["How to prevent cancer?", "Cancer prevention tips", "Reducing cancer risk"],
+        "responses": ["Prevent cancer by avoiding tobacco, maintaining a healthy diet, staying active, and getting regular screenings. Avoiding excessive sun exposure is also important."]
+      },
+      {
+        "tag": "cancer_treatment",
+        "patterns": ["Cancer treatment options", "How to treat cancer?", "Living with cancer"],
+        "responses": ["Cancer treatment options include surgery, chemotherapy, radiation therapy, and targeted therapies. Consult with your oncologist for a personalized treatment plan."]
+      },
+      {
+        "tag": "skin_health",
+        "patterns": ["Tips for healthy skin", "How to improve skin health?", "Skin care advice"],
+        "responses": ["Maintain healthy skin by cleansing regularly, using sunscreen, staying hydrated, and eating a balanced diet."]
+      },
+      {
+        "tag": "dermatology_care",
+        "patterns": ["Dermatology care tips", "How to care for your skin?", "Dermatology advice"],
+        "responses": ["Consult a dermatologist for specific skin concerns, use prescribed treatments, and follow a consistent skincare routine."]
+      },
+      {
+        "tag": "eye_health",
+        "patterns": ["Tips for healthy eyes", "How to improve eye health?", "Eye health advice"],
+        "responses": ["Maintain eye health by getting regular eye exams, protecting your eyes from UV rays, and following a diet rich in vitamins A and C."]
+      },
+      {
+        "tag": "vision_correction",
+        "patterns": ["Vision correction options", "How to correct vision?", "Vision correction tips"],
+        "responses": ["Vision correction options include glasses, contact lenses, and refractive surgery. Consult an eye doctor to determine the best option for you."]
+      },
+      {
+        "tag": "hearing_loss",
+        "patterns": ["Tips for preventing hearing loss", "How to manage hearing loss?", "Hearing loss advice"],
+        "responses": ["Prevent hearing loss by avoiding loud noises, using ear protection, and getting regular hearing check-ups."]
+      },
+      {
+        "tag": "hearing_aids",
+        "patterns": ["How to choose hearing aids?", "Hearing aid tips", "Using hearing aids"],
+        "responses": ["Choose hearing aids by consulting an audiologist, considering your lifestyle needs, and trying different types to find the best fit."]
+      },
+      {
+        "tag": "oral_hygiene",
+        "patterns": ["Oral hygiene tips", "How to maintain oral hygiene?", "Oral hygiene advice"],
+        "responses": ["Maintain oral hygiene by brushing twice a day, flossing daily, and visiting your dentist regularly."]
+      },
+      {
+        "tag": "dental_care",
+        "patterns": ["healthy teeth", "How to care for teeth?", "Dental health advice"],
+        "responses": ["Care for your teeth by maintaining good oral hygiene, eating a balanced diet, and avoiding sugary foods and drinks."]
+      },
+      {
+        "tag": "immunization",
+        "patterns": ["Why are immunizations important?", "Immunization schedule", "Benefits of vaccines"],
+        "responses": ["Immunizations protect against serious diseases. Follow the recommended schedule and consult your healthcare provider for more information."]
+      },
+      {
+        "tag": "preventive_healthcare",
+        "patterns": ["Preventive healthcare tips", "Importance of preventive healthcare", "How to practice preventive healthcare?"],
+        "responses": ["Practice preventive healthcare by getting regular check-ups, staying up-to-date with vaccinations, and maintaining a healthy lifestyle."]
+      },
+      {
+        "tag": "health_screenings",
+        "patterns": ["What are health screenings?", "Importance of health screenings", "Types of health screenings"],
+        "responses": ["Health screenings help detect diseases early. Common screenings include blood pressure, cholesterol, and cancer screenings."]
+      },
+      {
+        "tag": "blood_pressure_monitoring",
+        "patterns": ["How to monitor blood pressure?", "Blood pressure monitoring tips", "Importance of blood pressure monitoring"],
+        "responses": ["Monitor blood pressure regularly, keep track of your readings, and consult your doctor for advice on managing high or low blood pressure."]
+      },
+      {
+        "tag": "cholesterol_management",
+        "patterns": ["How to manage cholesterol?", "Cholesterol management tips", "Reducing cholesterol levels"],
+        "responses": ["Manage cholesterol by eating a healthy diet, exercising regularly, and taking medications as prescribed by your doctor."]
+      },
+      {
+        "tag": "diabetes_prevention",
+        "patterns": ["How to prevent diabetes?", "Diabetes prevention tips", "Reducing diabetes risk"],
+        "responses": ["Prevent diabetes by maintaining a healthy weight, eating a balanced diet, and staying physically active. Regular check-ups are also important."]
+      },
+      {
+        "tag": "exercise_routine",
+        "patterns": ["How to create an exercise routine?", "Exercise routine tips", "Developing an exercise routine"],
+        "responses": ["Create an exercise routine by setting realistic goals, choosing activities you enjoy, and gradually increasing intensity and duration."]
+      },
+      {
+        "tag": "fitness_programs",
+        "patterns": ["What are good fitness programs?", "Fitness program recommendations", "Joining a fitness program"],
+        "responses": ["Good fitness programs include a mix of cardio, strength training, and flexibility exercises. Choose one that fits your goals and schedule."]
+      },
+      {
+        "tag": "yoga_practice",
+        "patterns": ["Benefits of yoga practice", "How to start practicing yoga?", "Yoga practice tips"],
+        "responses": ["Yoga improves flexibility, strength, and mental clarity. Start with beginner classes and practice regularly for the best results."]
+      },
+      {
+        "tag": "pilates_classes",
+        "patterns": ["Benefits of Pilates", "How to start Pilates?", "Pilates class recommendations"],
+        "responses": ["Pilates strengthens core muscles and improves flexibility. Look for beginner classes and gradually progress to more advanced levels."]
+      },
+      {
+        "tag": "aerobic_exercise",
+        "patterns": ["Benefits of aerobic exercise", "How to do aerobic exercise?", "Aerobic exercise tips"],
+        "responses": ["Aerobic exercise improves cardiovascular health. Activities include running, swimming, and cycling. Aim for at least 150 minutes of moderate aerobic activity each week."]
+      },
+      {
+        "tag": "strength_training",
+        "patterns": ["Benefits of strength training", "How to start strength training?", "Strength training tips"],
+        "responses": ["Strength training builds muscle and increases metabolism. Start with bodyweight exercises and gradually add weights as you become stronger."]
+      },
+      {
+        "tag": "flexibility_exercises",
+        "patterns": ["Benefits of flexibility exercises", "How to improve flexibility?", "Flexibility exercise tips"],
+        "responses": ["Flexibility exercises improve range of motion and prevent injuries. Include stretching and yoga in your routine."]
+      },
+      {
+        "tag": "weight_management",
+        "patterns": ["How to manage weight?", "Weight management tips", "Maintaining healthy weight"],
+        "responses": ["Manage weight by balancing calorie intake with physical activity, eating a nutritious diet, and monitoring your weight regularly."]
+      },
+      {
+        "tag": "hydration_tips",
+        "patterns": ["How to stay hydrated?", "Hydration tips", "Importance of hydration"],
+        "responses": ["Stay hydrated by drinking plenty of water throughout the day. Avoid sugary drinks and alcohol, and eat water-rich foods like fruits and vegetables."]
+      },
+      {
+        "tag": "healthy_recipes",
+        "patterns": ["Healthy recipe ideas", "How to cook healthy meals?", "Healthy cooking tips"],
+        "responses": ["Try recipes that include whole grains, lean proteins, and plenty of fruits and vegetables. Avoid processed foods and excessive use of fats and sugars."]
+      },
+      {
+        "tag": "cooking_classes",
+        "patterns": ["Benefits of cooking classes", "How to join cooking classes?", "Cooking class recommendations"],
+        "responses": ["Cooking classes can teach you new skills and healthy recipes. Look for local classes or online courses that fit your interests."]
+      },
+      {
+        "tag": "meal_planning",
+        "patterns": ["How to plan meals?", "Meal planning tips", "Benefits of meal planning"],
+        "responses": ["Plan meals ahead to ensure a balanced diet and save time. Include a variety of foods and prepare a shopping list to avoid unhealthy choices."]
+      },
+      {
+        "tag": "mental_health_awareness",
+        "patterns": ["Importance of mental health awareness", "Mental health awareness tips", "Promoting mental health awareness"],
+        "responses": ["Raising mental health awareness helps reduce stigma and encourage people to seek help. Share information, support others, and educate yourself about mental health."]
+      },
+      {
+        "tag": "stress_management",
+        "patterns": ["How to manage stress?", "Stress management tips", "Reducing stress"],
+        "responses": ["Manage stress by practicing relaxation techniques, staying active, and maintaining a healthy work-life balance. Seek support from friends, family, or professionals if needed."]
+      },
+      {
+        "tag": "anxiety_relief",
+        "patterns": ["How to relieve anxiety?", "Anxiety relief tips", "Managing anxiety"],
+        "responses": ["Relieve anxiety by practicing deep breathing, meditation, and regular physical activity. Talking to a therapist can also be beneficial."]
+      },
+      {
+        "tag": "depression_treatment",
+        "patterns": ["How to treat depression?", "Depression treatment options", "Managing depression"],
+        "responses": ["Treat depression with a combination of therapy, medication, and lifestyle changes. Consult a mental health professional for a personalized treatment plan."]
+      },
+      {
+        "tag": "bipolar_disorder",
+        "patterns": ["What is bipolar disorder?", "Managing bipolar disorder", "Bipolar disorder treatment"],
+        "responses": ["Bipolar disorder is characterized by mood swings between depression and mania. Treatment includes medication, therapy, and lifestyle changes."]
+      },
+      {
+        "tag": "schizophrenia_support",
+        "patterns": ["How to support someone with schizophrenia?", "Schizophrenia support tips", "Managing schizophrenia"],
+        "responses": ["Support someone with schizophrenia by being understanding, encouraging treatment, and providing a stable environment. Professional help is essential."]
+      },
+      {
+        "tag": "ptsd_therapy",
+        "patterns": ["What is PTSD?", "PTSD therapy options", "Managing PTSD"],
+        "responses": ["PTSD is a mental health condition triggered by traumatic events. Treatment includes therapy, medication, and support from loved ones."]
+      },
+      {
+        "tag": "trauma_recovery",
+        "patterns": ["How to recover from trauma?", "Trauma recovery tips", "Managing trauma"],
+        "responses": ["Recover from trauma by seeking therapy, building a support system, and practicing self-care. Healing takes time and professional support is important."]
+      },
+      {
+        "tag": "grief_counseling",
+        "patterns": ["What is grief counseling?", "Benefits of grief counseling", "Grief counseling tips"],
+        "responses": ["Grief counseling helps individuals cope with loss. It provides emotional support, coping strategies, and a safe space to express feelings."]
+      },
+      {
+        "tag": "suicide_prevention",
+        "patterns": ["How to prevent suicide?", "Suicide prevention tips", "Recognizing suicide risk"],
+        "responses": ["Prevent suicide by recognizing warning signs, offering support, and encouraging professional help. If someone is in immediate danger, call emergency services."]
+      },
+      {
+        "tag": "mental_health_stigma",
+        "patterns": ["How to reduce mental health stigma?", "Mental health stigma tips", "Promoting mental health awareness"],
+        "responses": ["Reduce stigma by educating yourself and others, speaking openly about mental health, and supporting those who are struggling."]
+      },
+      {
+        "tag": "emotional_wellbeing",
+        "patterns": ["Tips for emotional wellbeing", "Improving emotional wellbeing", "Maintaining emotional health"],
+        "responses": ["Improve emotional wellbeing by practicing mindfulness, staying connected with loved ones, and seeking support when needed."]
+      },
+      {
+        "tag": "mindfulness_practice",
+        "patterns": ["How to practice mindfulness?", "Benefits of mindfulness", "Mindfulness tips"],
+        "responses": ["Practice mindfulness by focusing on the present moment, meditating, and engaging in activities that promote relaxation and awareness."]
+      },
+      {
+        "tag": "meditation_techniques",
+        "patterns": ["Meditation techniques", "How to meditate?", "Benefits of meditation"],
+        "responses": ["Meditate by finding a quiet space, focusing on your breath, and letting go of distractions. Regular practice can improve mental clarity and reduce stress."]
+      },
+      {
+        "tag": "cognitive_behavioral_therapy",
+        "patterns": ["What is cognitive behavioral therapy?", "CBT techniques", "Benefits of CBT"],
+        "responses": ["Cognitive behavioral therapy (CBT) is a form of therapy that helps change negative thought patterns and behaviors. It is effective for many mental health conditions."]
+      },
+      {
+        "tag": "psychotherapy",
+        "patterns": ["What is psychotherapy?", "Benefits of psychotherapy", "Psychotherapy techniques"],
+        "responses": ["Psychotherapy involves talking with a mental health professional to address emotional and psychological issues. It can help with a wide range of mental health conditions."]
+      },
+      {
+        "tag": "counseling_services",
+        "patterns": ["Counseling services", "How to find a counselor?", "Benefits of counseling"],
+        "responses": ["Counseling services provide support for emotional and psychological issues. Find a counselor through referrals, online directories, or healthcare providers."]
+      },
+      {
+        "tag": "mental_health_support_groups",
+        "patterns": ["Mental health support groups", "Benefits of support groups", "Finding a support group"],
+        "responses": ["Support groups provide a safe space to share experiences and receive support from others with similar challenges. Look for local or online groups."]
+      },
+      {
+        "tag": "crisis_intervention",
+        "patterns": ["What is crisis intervention?", "Crisis intervention tips", "Handling a crisis"],
+        "responses": ["Crisis intervention involves immediate support to individuals in crisis. It includes emotional support, safety planning, and connecting with resources."]
+      },
+      {
+        "tag": "mental_health_resources",
+        "patterns": ["Mental health resources", "Finding mental health resources", "Mental health support"],
+        "responses": ["Mental health resources include therapy, support groups, hotlines, and educational materials. Seek help from trusted sources and healthcare providers."]
+      },
+      {
+        "tag": "self_care_practices",
+        "patterns": ["Self-care practices", "How to practice self-care?", "Benefits of self-care"],
+        "responses": ["Self-care involves activities that promote physical, emotional, and mental health. Examples include exercise, hobbies, and relaxation techniques."]
+      },
+      {
+        "tag": "work_life_balance",
+        "patterns": ["Work-life balance tips", "How to achieve work-life balance?", "Improving work-life balance"],
+        "responses": ["Achieve work-life balance by setting boundaries, prioritizing tasks, and making time for self-care and family."]
+      },
+      {
+        "tag": "burnout_prevention",
+        "patterns": ["Burnout prevention tips", "How to prevent burnout?", "Recognizing burnout"],
+        "responses": ["Prevent burnout by taking regular breaks, managing stress, and seeking support. Recognize signs of burnout such as fatigue and decreased motivation."]
+      },
+      {
+        "tag": "relaxation_techniques",
+        "patterns": ["Relaxation techniques", "How to relax?", "Benefits of relaxation"],
+        "responses": ["Relaxation techniques include deep breathing, meditation, and progressive muscle relaxation. These practices can reduce stress and improve wellbeing."]
+      },
+      {
+        "tag": "sleep_hygiene",
+        "patterns": ["Sleep hygiene tips", "How to improve sleep hygiene?", "Benefits of good sleep hygiene"],
+        "responses": ["Good sleep hygiene includes maintaining a regular sleep schedule, creating a restful environment, and avoiding caffeine and electronics before bed."]
+      },
+      {
+        "tag": "insomnia_solutions",
+        "patterns": ["How to solve insomnia?", "Insomnia solutions", "Managing insomnia"],
+        "responses": ["Manage insomnia by practicing good sleep hygiene, reducing stress, and seeking medical advice if necessary."]
+      },
+      {
+        "tag": "healthy_relationships",
+        "patterns": ["Tips for healthy relationships", "How to build healthy relationships?", "Improving relationships"],
+        "responses": ["Build healthy relationships through open communication, mutual respect, and trust. Spend quality time together and support each other."]
+      },
+      {
+        "tag": "communication_skills",
+        "patterns": ["Communication skills tips", "How to improve communication skills?", "Effective communication"],
+        "responses": ["Improve communication skills by actively listening, expressing yourself clearly, and being respectful. Practice empathy and non-verbal communication."]
+      },
+      {
+        "tag": "anger_management",
+        "patterns": ["Anger management tips", "How to manage anger?", "Controlling anger"],
+        "responses": ["Manage anger by recognizing triggers, practicing relaxation techniques, and expressing your feelings in a healthy way. Seek professional help if needed."]
+      },
+      {
+        "tag": "conflict_resolution",
+        "patterns": ["Conflict resolution tips", "How to resolve conflicts?", "Effective conflict resolution"],
+        "responses": ["Resolve conflicts by communicating openly, understanding different perspectives, and finding a compromise. Stay calm and respectful during discussions."]
+      },
+      {
+        "tag": "positive_thinking",
+        "patterns": ["Positive thinking tips", "How to think positively?", "Benefits of positive thinking"],
+        "responses": ["Practice positive thinking by focusing on the good in situations, using positive affirmations, and surrounding yourself with positive influences."]
+      },
+      {
+        "tag": "resilience_building",
+        "patterns": ["Resilience building tips", "How to build resilience?", "Benefits of resilience"],
+        "responses": ["Build resilience by developing a strong support network, practicing self-care, and learning from challenges. Stay adaptable and maintain a positive outlook."]
+      },
+      {
+        "tag": "self_esteem_boost",
+        "patterns": ["How to boost self-esteem?", "Self-esteem improvement tips", "Building self-esteem"],
+        "responses": ["Boost self-esteem by setting realistic goals, recognizing your achievements, and practicing self-compassion. Surround yourself with supportive people."]
+      },
+      {
+        "tag": "confidence_building",
+        "patterns": ["Confidence building tips", "How to build confidence?", "Improving confidence"],
+        "responses": ["Build confidence by stepping out of your comfort zone, setting and achieving goals, and focusing on your strengths."]
+      },
+      {
+        "tag": "personal_growth",
+        "patterns": ["Tips for personal growth", "How to achieve personal growth?", "Personal development advice"],
+        "responses": ["Achieve personal growth by setting goals, seeking new experiences, and learning continuously. Reflect on your progress and celebrate your achievements."]
+      },
+      {
+        "tag": "life_coaching",
+        "patterns": ["What is life coaching?", "Benefits of life coaching", "How to find a life coach?"],
+        "responses": ["Life coaching helps you set and achieve personal and professional goals. Find a coach through referrals, online directories, or professional organizations."]
+      },
+      {
+        "tag": "goal_setting",
+        "patterns": ["Goal setting tips", "How to set goals?", "Achieving goals advice"],
+        "responses": ["Set SMART goals: Specific, Measurable, Achievable, Relevant, Time-bound. Break goals into smaller steps and track your progress."]
+      },
+      {
+        "tag": "motivation_techniques",
+        "patterns": ["Motivation techniques", "How to stay motivated?", "Boosting motivation"],
+        "responses": ["Stay motivated by setting clear goals, celebrating small successes, and staying positive. Surround yourself with supportive and inspiring people."]
+      },
+      {
+        "tag": "time_management",
+        "patterns": ["Time management tips", "How to manage time?", "Improving time management"],
+        "responses": ["Manage time effectively by setting priorities, using planners, and avoiding procrastination. Take regular breaks to maintain productivity."]
+      },
+      {
+        "tag": "organizational_skills",
+        "patterns": ["Organizational skills tips", "How to stay organized?", "Improving organizational skills"],
+        "responses": ["Stay organized by using to-do lists, keeping your workspace tidy, and setting clear goals. Break tasks into manageable steps."]
+      },
+      {
+        "tag": "productivity_hacks",
+        "patterns": ["Productivity hacks", "How to be more productive?", "Improving productivity"],
+        "responses": ["Boost productivity by eliminating distractions, setting clear goals, and using time management techniques. Take breaks to stay focused and refreshed."]
+      },
+      {
+        "tag": "mental_clarity",
+        "patterns": ["Tips for mental clarity", "How to improve mental clarity?", "Maintaining mental clarity"],
+        "responses": ["Improve mental clarity by getting enough sleep, staying hydrated, and practicing mindfulness. Avoid multitasking and manage stress effectively."]
+      },
+      {
+        "tag": "focus_improvement",
+        "patterns": ["Focus improvement tips", "How to improve focus?", "Increasing focus"],
+        "responses": ["Improve focus by setting clear goals, minimizing distractions, and practicing mindfulness. Take regular breaks to stay refreshed."]
+      },
+      {
+        "tag": "concentration_tips",
+        "patterns": ["Concentration tips", "How to concentrate better?", "Improving concentration"],
+        "responses": ["Improve concentration by creating a quiet workspace, breaking tasks into smaller steps, and taking regular breaks. Practice mindfulness to enhance focus."]
+      },
+      {
+        "tag": "adhd_management",
+        "patterns": ["ADHD management tips", "How to manage ADHD?", "ADHD treatment options"],
+        "responses": ["Manage ADHD with a combination of medication, behavioral therapy, and lifestyle changes. Stay organized and use tools to help with focus."]
+      },
+      {
+        "tag": "learning_disabilities",
+        "patterns": ["Learning disabilities tips", "How to support someone with learning disabilities?", "Learning disabilities resources"],
+        "responses": ["Support individuals with learning disabilities by providing structured environments, using assistive technologies, and seeking professional help."]
+      },
+      {
+        "tag": "autism_spectrum_disorder",
+        "patterns": ["What is autism spectrum disorder?", "Managing autism spectrum disorder", "Support for autism spectrum disorder"],
+        "responses": ["Autism spectrum disorder affects communication and behavior. Support includes therapies, educational interventions, and family support."]
+      },
+      {
+        "tag": "asperger_syndrome",
+        "patterns": ["What is Asperger syndrome?", "Managing Asperger syndrome", "Support for Asperger syndrome"],
+        "responses": ["Asperger syndrome is a form of autism. Support includes behavioral therapy, social skills training, and educational support."]
+      },
+      {
+        "tag": "special_education",
+        "patterns": ["Special education tips", "How to access special education?", "Benefits of special education"],
+        "responses": ["Special education provides tailored educational programs for individuals with disabilities. Access through school systems and specialized programs."]
+      },
+      {
+        "tag": "inclusive_education",
+        "patterns": ["What is inclusive education?", "Benefits of inclusive education", "Inclusive education tips"],
+        "responses": ["Inclusive education ensures all students, regardless of their abilities, learn together. It promotes diversity, acceptance, and equal opportunities."]
+      },
+      {
+        "tag": "wellness_programs",
+        "patterns": ["Wellness programs", "Benefits of wellness programs", "How to join wellness programs?"],
+        "responses": ["Wellness programs promote healthy lifestyles and prevent diseases. Look for programs offered by employers, community centers, or healthcare providers."]
+      },
+      {
+        "tag": "health_education",
+        "patterns": ["Health education tips", "Importance of health education", "Health education resources"],
+        "responses": ["Health education provides information about healthy behaviors and lifestyles. Access through schools, community programs, and online resources."]
+      },
+      {
+        "tag": "public_health_campaigns",
+        "patterns": ["Public health campaigns", "Benefits of public health campaigns", "How to participate in public health campaigns?"],
+        "responses": ["Public health campaigns raise awareness about health issues and promote healthy behaviors. Participate by staying informed and supporting initiatives."]
+      },
+      {
+        "tag": "community_health",
+        "patterns": ["Community health tips", "Improving community health", "Community health programs"],
+        "responses": ["Improve community health by promoting healthy lifestyles, supporting local health initiatives, and addressing social determinants of health."]
+      },
+      {
+        "tag": "workplace_wellness",
+        "patterns": ["Workplace wellness tips", "Benefits of workplace wellness programs", "How to improve workplace wellness?"],
+        "responses": ["Promote workplace wellness by encouraging healthy behaviors, providing resources, and creating a supportive work environment."]
+      },
+      {
+        "tag": "employee_health",
+        "patterns": ["Employee health tips", "How to support employee health?", "Improving employee health"],
+        "responses": ["Support employee health by offering wellness programs, promoting work-life balance, and providing health resources."]
+      },
+      {
+        "tag": "health_promotion",
+        "patterns": ["Health promotion tips", "How to promote health?", "Health promotion strategies"],
+        "responses": ["Promote health by raising awareness, educating communities, and supporting healthy behaviors. Collaborate with healthcare providers and organizations."]
+      },
+      {
+        "tag": "healthy_lifestyle",
+        "patterns": ["Healthy lifestyle tips", "How to live a healthy lifestyle?", "Benefits of a healthy lifestyle"],
+        "responses": ["Maintain a healthy lifestyle by eating a balanced diet, staying active, managing stress, and getting regular check-ups."]
+      },
+      {
+        "tag": "disease_prevention",
+        "patterns": ["Disease prevention tips", "How to prevent diseases?", "Preventing chronic diseases"],
+        "responses": ["Prevent diseases by practicing healthy behaviors, staying informed about health risks, and getting regular screenings and vaccinations."]
+      },
+      {
+        "tag": "health_advocacy",
+        "patterns": ["What is health advocacy?", "Benefits of health advocacy", "How to become a health advocate?"],
+        "responses": ["Health advocacy involves supporting health-related causes and promoting health policies. Advocate by staying informed and participating in initiatives."]
+      },
+      {
+        "tag": "healthcare_access",
+        "patterns": ["How to access healthcare?", "Improving healthcare access", "Healthcare access tips"],
+        "responses": ["Access healthcare by understanding your options, utilizing available resources, and seeking support from community programs."]
+      },
+      {
+        "tag": "medical_insurance",
+        "patterns": ["What is medical insurance?", "Benefits of medical insurance", "How to get medical insurance?"],
+        "responses": ["Medical insurance helps cover healthcare costs. Choose a plan that fits your needs and budget, and understand the coverage details."]
+      },
+      {
+        "tag": "telemedicine",
+        "patterns": ["What is telemedicine?", "Benefits of telemedicine", "How to use telemedicine?"],
+        "responses": ["Telemedicine allows you to consult healthcare providers remotely. It offers convenience and access to care, especially for those in remote areas."]
+      },
+      {
+        "tag": "health_technology",
+        "patterns": ["Health technology tips", "Benefits of health technology", "How to use health technology?"],
+        "responses": ["Health technology includes tools like fitness trackers, health apps, and telemedicine. Use these tools to monitor and improve your health."]
+      },
+      {
+        "tag": "wearable_health_devices",
+        "patterns": ["What are wearable health devices?", "Benefits of wearable health devices", "How to use wearable health devices?"],
+        "responses": ["Wearable health devices track fitness, monitor health metrics, and provide real-time data. Choose a device that meets your health needs."]
+      },
+      {
+        "tag": "health_apps",
+        "patterns": ["What are health apps?", "Benefits of health apps", "How to use health apps?"],
+        "responses": ["Health apps help track fitness, manage medications, and access health information. Download from trusted sources and use regularly."]
+      },
+      {
+        "tag": "online_health_resources",
+        "patterns": ["What are online health resources?", "Benefits of online health resources", "How to find online health resources?"],
+        "responses": ["Online health resources provide information on various health topics. Access through reputable websites, health blogs, and forums."]
+      },
+      {
+        "tag": "health_blogs",
+        "patterns": ["What are health blogs?", "Benefits of health blogs", "How to find health blogs?"],
+        "responses": ["Health blogs offer insights, tips, and personal stories about health and wellness. Follow blogs from credible sources and experts."]
+      },
+      {
+        "tag": "health_forums",
+        "patterns": ["What are health forums?", "Benefits of health forums", "How to use health forums?"],
+        "responses": ["Health forums provide a platform to discuss health topics and share experiences. Join forums moderated by healthcare professionals."]
+      },
+      {
+        "tag": "support_networks",
+        "patterns": ["What are support networks?", "Benefits of support networks", "How to find support networks?"],
+        "responses": ["Support networks offer emotional and practical support. Find networks through healthcare providers, community centers, and online platforms."]
+      },
+      {
+        "tag": "family_health",
+        "patterns": ["Tips for family health", "How to improve family health?", "Family health advice"],
+        "responses": ["Promote family health by adopting healthy habits together, staying active, and supporting each other's wellbeing."]
+      },
+      {
+        "tag": "child_health",
+        "patterns": ["Tips for child health", "How to improve child health?", "Child health advice"],
+        "responses": ["Ensure child health by providing a balanced diet, encouraging physical activity, and scheduling regular check-ups."]
+      },
+      {
+        "tag": "adolescent_health",
+        "patterns": ["Tips for adolescent health", "How to improve adolescent health?", "Adolescent health advice"],
+        "responses": ["Support adolescent health by promoting healthy habits, providing mental health support, and encouraging open communication."]
+      },
+      {
+        "tag": "women_health",
+        "patterns": ["Tips for women's health", "How to improve women's health?", "Women's health advice"],
+        "responses": ["Improve women's health by getting regular screenings, maintaining a balanced diet, and staying active. Address specific health needs with your healthcare provider."]
+      },
+      {
+        "tag": "men_health",
+        "patterns": ["Tips for men's health", "How to improve men's health?", "Men's health advice"],
+        "responses": ["Support men's health by promoting regular check-ups, a healthy diet, and physical activity. Address specific health concerns with your healthcare provider."]
+      },
+      {
+        "tag": "senior_health",
+        "patterns": ["Tips for senior health", "How to improve senior health?", "Senior health advice"],
+        "responses": ["Promote senior health by encouraging regular check-ups, physical activity, and social engagement. Address specific health needs with your healthcare provider."]
+      },
+      {
+        "tag": "geriatric_care",
+        "patterns": ["What is geriatric care?", "Benefits of geriatric care", "How to access geriatric care?"],
+        "responses": ["Geriatric care focuses on the health of older adults. Access through healthcare providers who specialize in aging and geriatric services."]
+      },
+      {
+        "tag": "pediatric_care",
+        "patterns": ["What is pediatric care?", "Benefits of pediatric care", "How to find pediatric care?"],
+        "responses": ["Pediatric care focuses on the health of children. Find a pediatrician through referrals, online directories, or healthcare providers."]
+      },
+      {
+        "tag": "maternal_health",
+        "patterns": ["Tips for maternal health", "How to improve maternal health?", "Maternal health advice"],
+        "responses": ["Support maternal health by getting regular prenatal check-ups, maintaining a balanced diet, and staying active. Address specific health needs with your healthcare provider."]
+      },
+      {
+        "tag": "reproductive_health",
+        "patterns": ["Tips for reproductive health", "How to improve reproductive health?", "Reproductive health advice"],
+        "responses": ["Maintain reproductive health by practicing safe sex, getting regular screenings, and addressing specific health needs with your healthcare provider."]
+      },
+      {
+        "tag": "sexual_health",
+        "patterns": ["Tips for sexual health", "How to improve sexual health?", "Sexual health advice"],
+        "responses": ["Promote sexual health by practicing safe sex, getting regular screenings, and communicating openly with your partner."]
+      },
+      {
+        "tag": "fertility_treatments",
+        "patterns": ["What are fertility treatments?", "Benefits of fertility treatments", "How to access fertility treatments?"],
+        "responses": ["Fertility treatments include medications, assisted reproductive technologies, and surgeries. Consult a fertility specialist for options."]
+      },
+      {
+        "tag": "prenatal_care",
+        "patterns": ["What is prenatal care?", "Benefits of prenatal care", "How to access prenatal care?"],
+        "responses": ["Prenatal care involves regular check-ups during pregnancy to monitor the health of the mother and baby. Access through your healthcare provider."]
+      },
+      {
+        "tag": "postnatal_care",
+        "patterns": ["What is postnatal care?", "Benefits of postnatal care", "How to access postnatal care?"],
+        "responses": ["Postnatal care involves health checks for the mother and baby after birth. Access through your healthcare provider and support networks."]
+      },
+      {
+        "tag": "menopause_support",
+        "patterns": ["Tips for menopause support", "How to manage menopause?", "Menopause support advice"],
+        "responses": ["Manage menopause symptoms with a balanced diet, regular exercise, and stress management. Seek support from healthcare providers and support groups."]
+      },
+      {
+        "tag": "andropause_support",
+        "patterns": ["What is andropause?", "How to manage andropause?", "Andropause support tips"],
+        "responses": ["Andropause involves changes in male hormone levels. Manage symptoms with a healthy lifestyle and consult your healthcare provider for support."]
+      },
+      {
+        "tag": "hormone_therapy",
+        "patterns": ["What is hormone therapy?", "Benefits of hormone therapy", "How to access hormone therapy?"],
+        "responses": ["Hormone therapy involves using medications to balance hormone levels. Consult your healthcare provider for options and guidance."]
+      },
+      {
+        "tag": "genetic_counseling",
+        "patterns": ["What is genetic counseling?", "Benefits of genetic counseling", "How to access genetic counseling?"],
+        "responses": ["Genetic counseling provides information and support about genetic conditions. Access through healthcare providers specializing in genetics."]
+      },
+      {
+        "tag": "rare_diseases",
+        "patterns": ["What are rare diseases?", "Rare diseases support", "How to manage rare diseases?"],
+        "responses": ["Rare diseases are conditions affecting a small percentage of the population. Seek support from specialists, support groups, and research organizations."]
+      },
+      {
+        "tag": "chronic_disease_management",
+        "patterns": ["Tips for chronic disease management", "How to manage chronic diseases?", "Chronic disease support"],
+        "responses": ["Manage chronic diseases by following your treatment plan, maintaining a healthy lifestyle, and seeking regular medical care."]
+      },
+      {
+        "tag": "pain_relief",
+        "patterns": ["Tips for pain relief", "How to relieve pain?", "Pain relief strategies"],
+        "responses": ["Relieve pain with medications, physical therapy, and alternative therapies like acupuncture. Consult your healthcare provider for options."]
+      },
+      {
+        "tag": "palliative_care",
+        "patterns": ["What is palliative care?", "Benefits of palliative care", "How to access palliative care?"],
+        "responses": ["Palliative care provides support for serious illnesses, focusing on relief from symptoms and stress. Access through healthcare providers specializing in palliative care."]
+      },
+      {
+        "tag": "hospice_care",
+        "patterns": ["What is hospice care?", "Benefits of hospice care", "How to access hospice care?"],
+        "responses": ["Hospice care supports patients with terminal illnesses, focusing on comfort and quality of life. Access through healthcare providers specializing in hospice care."]
+      },
+      {
+        "tag": "end_of_life_care",
+        "patterns": ["What is end-of-life care?", "Benefits of end-of-life care", "How to access end-of-life care?"],
+        "responses": ["End-of-life care supports patients in their final stages of life, focusing on comfort and dignity. Access through healthcare providers specializing in end-of-life care."]
+      },
+      {
+        "tag": "holistic_health",
+        "patterns": ["What is holistic health?", "Benefits of holistic health", "How to practice holistic health?"],
+        "responses": ["Holistic health focuses on the whole person, including physical, mental, and spiritual health. Practice through balanced living and integrative therapies."]
+      },
+      {
+        "tag": "integrative_medicine",
+        "patterns": ["What is integrative medicine?", "Benefits of integrative medicine", "How to practice integrative medicine?"],
+        "responses": ["Integrative medicine combines conventional and alternative therapies for whole-person care. Consult healthcare providers who specialize in integrative approaches."]
+      },
+      {
+        "tag": "alternative_therapies",
+        "patterns": ["What are alternative therapies?", "Benefits of alternative therapies", "Types of alternative therapies"],
+        "responses": ["Alternative therapies include practices like acupuncture, herbal medicine, and chiropractic care. Consult healthcare providers for guidance."]
+      },
+      {
+        "tag": "herbal_remedies",
+        "patterns": ["What are herbal remedies?", "Benefits of herbal remedies", "Using herbal remedies"],
+        "responses": ["Herbal remedies use plant-based treatments for health conditions. Consult a healthcare provider for safe and effective use."]
+      },
+      {
+        "tag": "acupuncture",
+        "patterns": ["What is acupuncture?", "Benefits of acupuncture", "How to access acupuncture?"],
+        "responses": ["Acupuncture involves inserting needles into specific points on the body to relieve pain and promote healing. Access through licensed practitioners."]
+      },
+      {
+        "tag": "chiropractic_care",
+        "patterns": ["What is chiropractic care?", "Benefits of chiropractic care", "How to access chiropractic care?"],
+        "responses": ["Chiropractic care focuses on diagnosing and treating musculoskeletal issues, especially spinal problems. Access through licensed chiropractors."]
+      },
+      {
+        "tag": "organic_food",
+        "patterns": ["Benefits of organic food", "How to eat organic?", "Organic food tips"],
+        "responses": ["Organic food is grown without synthetic pesticides and fertilizers. Choose organic options for fruits, vegetables, and meats for a healthier diet."]
+      },
+      {
+        "tag": "gluten_free_diet",
+        "patterns": ["What is a gluten-free diet?", "Benefits of a gluten-free diet", "How to eat gluten-free?"],
+        "responses": ["A gluten-free diet avoids foods containing gluten, a protein found in wheat, barley, and rye. It's essential for individuals with celiac disease or gluten sensitivity."]
+      },
+      {
+        "tag": "vegan_lifestyle",
+        "patterns": ["What is a vegan lifestyle?", "Benefits of a vegan lifestyle", "How to adopt a vegan lifestyle?"],
+        "responses": ["A vegan lifestyle excludes all animal products. Benefits include improved health, environmental sustainability, and animal welfare. Start by exploring plant-based recipes and products."]
+      },
+      {
+        "tag": "vegetarian_diet",
+        "patterns": ["What is a vegetarian diet?", "Benefits of a vegetarian diet", "How to eat a vegetarian diet?"],
+        "responses": ["A vegetarian diet excludes meat but may include dairy and eggs. Benefits include improved health and reduced environmental impact. Focus on a variety of plant-based foods."]
+      },
+      {
+        "tag": "keto_diet",
+        "patterns": ["What is a keto diet?", "Benefits of a keto diet", "How to follow a keto diet?"],
+        "responses": ["A keto diet is high in fats, moderate in protein, and very low in carbohydrates. It can help with weight loss and improve metabolic health. Consult your doctor before starting."]
+      },
+      {
+        "tag": "paleo_diet",
+        "patterns": ["What is a paleo diet?", "Benefits of a paleo diet", "How to follow a paleo diet?"],
+        "responses": ["A paleo diet focuses on whole foods similar to what might have been eaten during the Paleolithic era. It includes meats, fish, fruits, vegetables, nuts, and seeds."]
+      },
+      {
+        "tag": "intermittent_fasting",
+        "patterns": ["What is intermittent fasting?", "Benefits of intermittent fasting", "How to practice intermittent fasting?"],
+        "responses": ["Intermittent fasting involves cycling between periods of eating and fasting. Benefits include weight loss and improved metabolic health. Consult a healthcare provider before starting."]
+      },
+      {
+        "tag": "detox_programs",
+        "patterns": ["What are detox programs?", "Benefits of detox programs", "How to detox safely?"],
+        "responses": ["Detox programs aim to eliminate toxins from the body. Focus on a balanced diet, staying hydrated, and avoiding processed foods. Consult a healthcare provider before starting."]
+      },
+      {
+        "tag": "clean_eating",
+        "patterns": ["What is clean eating?", "Benefits of clean eating", "How to practice clean eating?"],
+        "responses": ["Clean eating focuses on whole, unprocessed foods. Benefits include improved health and energy levels. Include plenty of fruits, vegetables, and whole grains in your diet."]
+      },
+      {
+        "tag": "superfoods",
+        "patterns": ["What are superfoods?", "Benefits of superfoods", "How to include superfoods in diet?"],
+        "responses": ["Superfoods are nutrient-rich foods beneficial for health. Examples include blueberries, kale, and quinoa. Include them in your meals for added nutrients."]
+      },
+      {
+        "tag": "antioxidants",
+        "patterns": ["What are antioxidants?", "Benefits of antioxidants", "Foods rich in antioxidants"],
+        "responses": ["Antioxidants protect cells from damage. Foods rich in antioxidants include berries, nuts, and dark chocolate. Incorporate them into your diet for better health."]
+      },
+      {
+        "tag": "probiotics",
+        "patterns": ["What are probiotics?", "Benefits of probiotics", "Sources of probiotics"],
+        "responses": ["Probiotics are beneficial bacteria that support gut health. Sources include yogurt, kefir, and fermented foods. They can improve digestion and boost immunity."]
+      },
+      {
+        "tag": "prebiotics",
+        "patterns": ["What are prebiotics?", "Benefits of prebiotics", "Sources of prebiotics"],
+        "responses": ["Prebiotics are fibers that feed beneficial gut bacteria. Sources include garlic, onions, and bananas. They support a healthy digestive system."]
+      },
+      {
+        "tag": "healthy_fats",
+        "patterns": ["What are healthy fats?", "Benefits of healthy fats", "Sources of healthy fats"],
+        "responses": ["Healthy fats include unsaturated fats found in olive oil, avocados, and nuts. They support heart health and overall wellbeing."]
+      },
+      {
+        "tag": "complex_carbohydrates",
+        "patterns": ["What are complex carbohydrates?", "Benefits of complex carbohydrates", "Sources of complex carbohydrates"],
+        "responses": ["Complex carbohydrates provide sustained energy. Sources include whole grains, legumes, and vegetables. They are an important part of a balanced diet."]
+      },
+      {
+        "tag": "lean_proteins",
+        "patterns": ["What are lean proteins?", "Benefits of lean proteins", "Sources of lean proteins"],
+        "responses": ["Lean proteins are low in fat and high in nutrients. Sources include chicken, fish, beans, and legumes. They are essential for muscle growth and repair."]
+      },
+      {
+        "tag": "fiber_rich_foods",
+        "patterns": ["What are fiber-rich foods?", "Benefits of fiber-rich foods", "Sources of fiber"],
+        "responses": ["Fiber-rich foods support digestive health. Sources include fruits, vegetables, whole grains, and legumes. They help prevent constipation and maintain a healthy weight."]
+      },
+      {
+        "tag": "low_sodium_diet",
+        "patterns": ["What is a low sodium diet?", "Benefits of a low sodium diet", "How to follow a low sodium diet?"],
+        "responses": ["A low sodium diet helps manage blood pressure and reduce the risk of heart disease. Focus on fresh foods and avoid processed items high in salt."]
+      },
+      {
+        "tag": "low_sugar_diet",
+        "patterns": ["What is a low sugar diet?", "Benefits of a low sugar diet", "How to reduce sugar intake?"],
+        "responses": ["A low sugar diet helps prevent obesity and diabetes. Avoid sugary drinks, read food labels, and choose whole foods over processed ones."]
+      },
+      {
+        "tag": "heart_healthy_diet",
+        "patterns": ["What is a heart-healthy diet?", "Benefits of a heart-healthy diet", "How to eat for heart health?"],
+        "responses": ["A heart-healthy diet includes plenty of fruits, vegetables, whole grains, and lean proteins. Limit saturated fats, trans fats, and sodium."]
+      },
+      {
+        "tag": "mediterranean_diet",
+        "patterns": ["What is the Mediterranean diet?", "Benefits of the Mediterranean diet", "How to follow the Mediterranean diet?"],
+        "responses": ["The Mediterranean diet emphasizes fruits, vegetables, whole grains, nuts, and olive oil. It includes moderate consumption of fish and poultry, and limits red meat."]
+      },
+      {
+        "tag": "dash_diet",
+        "patterns": ["What is the DASH diet?", "Benefits of the DASH diet", "How to follow the DASH diet?"],
+        "responses": ["The DASH diet (Dietary Approaches to Stop Hypertension) helps lower blood pressure. It includes plenty of fruits, vegetables, and low-fat dairy, and limits salt and saturated fat."]
+      },
+      {
+        "tag": "plant_based_diet",
+        "patterns": ["What is a plant-based diet?", "Benefits of a plant-based diet", "How to follow a plant-based diet?"],
+        "responses": ["A plant-based diet focuses on foods derived from plants, including vegetables, fruits, nuts, seeds, oils, whole grains, legumes, and beans. It can improve health and reduce environmental impact."]
+      },
+      {
+        "tag": "whole_foods",
+        "patterns": ["What are whole foods?", "Benefits of whole foods", "How to eat whole foods?"],
+        "responses": ["Whole foods are minimally processed and retain their natural nutrients. Examples include fresh fruits, vegetables, whole grains, and lean proteins."]
+      },
+      {
+        "tag": "organic_eating",
+        "patterns": ["What is organic eating?", "Benefits of organic eating", "How to eat organic?"],
+        "responses": ["Organic eating involves consuming foods produced without synthetic pesticides and fertilizers. Look for organic labels on fruits, vegetables, meats, and dairy products."]
+      },
+      {
+        "tag": "farm_to_table",
+        "patterns": ["What is farm-to-table?", "Benefits of farm-to-table", "How to support farm-to-table?"],
+        "responses": ["Farm-to-table emphasizes sourcing food directly from local farms. It supports local agriculture and provides fresh, seasonal produce."]
+      },
+      {
+        "tag": "seasonal_eating",
+        "patterns": ["What is seasonal eating?", "Benefits of seasonal eating", "How to eat seasonally?"],
+        "responses": ["Seasonal eating involves consuming foods that are in season. It ensures freshness and supports local farmers. Focus on seasonal fruits and vegetables."]
+      },
+      {
+        "tag": "local_produce",
+        "patterns": ["Benefits of local produce", "How to support local produce?", "Eating local produce tips"],
+        "responses": ["Local produce is fresher and supports the local economy. Find local farmers' markets and join community-supported agriculture programs."]
+      },
+      {
+        "tag": "meal_prep",
+        "patterns": ["Meal prep tips", "How to meal prep?", "Benefits of meal prepping"],
+        "responses": ["Meal prepping involves preparing meals in advance to save time and ensure healthy eating. Plan your meals, make a shopping list, and set aside time to cook."]
+      },
+      {
+        "tag": "healthy_snacks",
+        "patterns": ["Healthy snack ideas", "What are healthy snacks?", "Tips for healthy snacking"],
+        "responses": ["Healthy snacks include fruits, vegetables, nuts, and yogurt. Keep snacks portion-controlled and avoid processed options high in sugar and salt."]
+      },
+      {
+        "tag": "balanced_breakfast",
+        "patterns": ["What is a balanced breakfast?", "Balanced breakfast ideas", "Tips for a healthy breakfast"],
+        "responses": ["A balanced breakfast includes protein, whole grains, and fruits or vegetables. Examples include oatmeal with nuts, a smoothie, or whole grain toast with avocado."]
+      },
+      {
+        "tag": "nutritious_lunch",
+        "patterns": ["Nutritious lunch ideas", "What is a nutritious lunch?", "Tips for a healthy lunch"],
+        "responses": ["A nutritious lunch includes lean proteins, whole grains, and vegetables. Examples include a salad with grilled chicken, a quinoa bowl, or a vegetable stir-fry."]
+      },
+      {
+        "tag": "healthy_dinner_ideas",
+        "patterns": ["Healthy dinner ideas", "What is a healthy dinner?", "Tips for a healthy dinner"],
+        "responses": ["A healthy dinner includes lean proteins, whole grains, and a variety of vegetables. Examples include baked salmon with quinoa, vegetable soup, or a tofu stir-fry."]
+      },
+      {
+        "tag": "smoothie_recipes",
+        "patterns": ["Healthy smoothie recipes", "What are healthy smoothies?", "How to make a healthy smoothie?"],
+        "responses": ["Healthy smoothies include fruits, vegetables, and protein sources like yogurt or protein powder. Blend ingredients like spinach, banana, and almond milk for a nutritious drink."]
+      },
+      {
+        "tag": "juice_cleanse",
+        "patterns": ["What is a juice cleanse?", "Benefits of a juice cleanse", "How to do a juice cleanse?"],
+        "responses": ["A juice cleanse involves consuming only fruit and vegetable juices for a period of time. It can help reset eating habits, but consult a healthcare provider before starting."]
+      },
+      {
+        "tag": "detox_diet",
+        "patterns": ["What is a detox diet?", "Benefits of a detox diet", "How to follow a detox diet?"],
+        "responses": ["A detox diet focuses on eliminating toxins from the body by eating whole, unprocessed foods. Drink plenty of water and include detoxifying foods like greens and fruits."]
+      },
+      {
+        "tag": "elimination_diet",
+        "patterns": ["What is an elimination diet?", "Benefits of an elimination diet", "How to follow an elimination diet?"],
+        "responses": ["An elimination diet involves removing specific foods to identify allergies or sensitivities. Reintroduce foods gradually and monitor for symptoms. Consult a healthcare provider for guidance."]
+      },
+      {
+        "tag": "food_allergies",
+        "patterns": ["What are food allergies?", "Managing food allergies", "Food allergy tips"],
+        "responses": ["Food allergies cause an immune response to certain foods. Manage by avoiding allergens, reading food labels, and carrying emergency medication."]
+      },
+      {
+        "tag": "gluten_intolerance",
+        "patterns": ["What is gluten intolerance?", "Managing gluten intolerance", "Gluten intolerance tips"],
+        "responses": ["Gluten intolerance causes digestive issues when consuming gluten. Manage by following a gluten-free diet and reading food labels carefully."]
+      },
+      {
+        "tag": "lactose_intolerance",
+        "patterns": ["What is lactose intolerance?", "Managing lactose intolerance", "Lactose intolerance tips"],
+        "responses": ["Lactose intolerance is the inability to digest lactose in dairy products. Manage by choosing lactose-free options and taking lactase supplements."]
+      },
+      {
+        "tag": "celiac_disease",
+        "patterns": ["What is celiac disease?", "Managing celiac disease", "Celiac disease tips"],
+        "responses": ["Celiac disease is an autoimmune disorder triggered by gluten. Manage by following a strict gluten-free diet and avoiding cross-contamination."]
+      },
+      {
+        "tag": "nut_free_diet",
+        "patterns": ["What is a nut-free diet?", "Benefits of a nut-free diet", "How to follow a nut-free diet?"],
+        "responses": ["A nut-free diet avoids all nuts and products containing nuts. It's essential for individuals with nut allergies. Read labels and choose nut-free alternatives."]
+      },
+      {
+        "tag": "dairy_free_diet",
+        "patterns": ["What is a dairy-free diet?", "Benefits of a dairy-free diet", "How to follow a dairy-free diet?"],
+        "responses": ["A dairy-free diet excludes all dairy products. It's important for those with lactose intolerance or dairy allergies. Choose plant-based alternatives."]
+      },
+      {
+        "tag": "soy_free_diet",
+        "patterns": ["What is a soy-free diet?", "Benefits of a soy-free diet", "How to follow a soy-free diet?"],
+        "responses": ["A soy-free diet excludes all soy products. It's necessary for individuals with soy allergies. Read labels and choose soy-free alternatives."]
+      },
+      {
+        "tag": "allergen_free_cooking",
+        "patterns": ["Allergen-free cooking tips", "How to cook allergen-free?", "Benefits of allergen-free cooking"],
+        "responses": ["Allergen-free cooking avoids ingredients that cause allergic reactions. Use substitutions and follow recipes designed for specific dietary needs."]
+      },
+      {
+        "tag": "inflammatory_foods",
+        "patterns": ["What are inflammatory foods?", "How to avoid inflammatory foods?", "Inflammatory foods to avoid"],
+        "responses": ["Inflammatory foods include processed foods, sugary drinks, and trans fats. Avoid these to reduce inflammation and improve health."]
+      },
+      {
+        "tag": "anti_inflammatory_diet",
+        "patterns": ["What is an anti-inflammatory diet?", "Benefits of an anti-inflammatory diet", "How to follow an anti-inflammatory diet?"],
+        "responses": ["An anti-inflammatory diet includes foods that reduce inflammation, such as fruits, vegetables, nuts, and fatty fish. Avoid processed and sugary foods."]
+      },
+      {
+        "tag": "immune_boosting_foods",
+        "patterns": ["What are immune-boosting foods?", "Benefits of immune-boosting foods", "How to boost immune system with diet?"],
+        "responses": ["Immune-boosting foods include citrus fruits, garlic, ginger, and yogurt. Incorporate these into your diet to support your immune system."]
+      },
+      {
+        "tag": "bone_strengthening_foods",
+        "patterns": ["What are bone-strengthening foods?", "Benefits of bone-strengthening foods", "Foods for bone health"],
+        "responses": ["Bone-strengthening foods include dairy products, leafy greens, and fish rich in calcium and vitamin D. These support strong and healthy bones."]
+      },
+      {
+        "tag": "brain_boosting_foods",
+        "patterns": ["What are brain-boosting foods?", "Benefits of brain-boosting foods", "Foods for brain health"],
+        "responses": ["Brain-boosting foods include fatty fish, blueberries, nuts, and seeds. These foods improve cognitive function and protect brain health."]
+      },
+      {
+        "tag": "eye_healthy_foods",
+        "patterns": ["What are eye-healthy foods?", "Benefits of eye-healthy foods", "Foods for eye health"],
+        "responses": ["Eye-healthy foods include carrots, leafy greens, and fish rich in omega-3 fatty acids. These nutrients support vision and eye health."]
+      },
+      {
+        "tag": "digestive_health",
+        "patterns": ["Tips for digestive health", "How to improve digestive health?", "Digestive health advice"],
+        "responses": ["Improve digestive health by eating fiber-rich foods, staying hydrated, and avoiding processed foods. Probiotics and regular exercise can also help."]
+      },
+      {
+        "tag": "gut_health",
+        "patterns": ["Tips for gut health", "How to improve gut health?", "Gut health advice"],
+        "responses": ["Support gut health by eating a diet rich in fiber, prebiotics, and probiotics. Avoid excessive antibiotics and manage stress effectively."]
+      },
+      {
+        "tag": "herbal_teas",
+        "patterns": ["Benefits of herbal teas", "How to use herbal teas?", "Popular herbal teas"],
+        "responses": ["Herbal teas like chamomile, peppermint, and ginger offer various health benefits. They can aid digestion, reduce stress, and improve sleep."]
+      },
+      {
+        "tag": "infused_water",
+        "patterns": ["Benefits of infused water", "How to make infused water?", "Infused water recipes"],
+        "responses": ["Infused water is water flavored with fruits, vegetables, and herbs. It's a refreshing way to stay hydrated and enjoy the benefits of the added ingredients."]
+      },
+      {
+        "tag": "healthy_cooking_oils",
+        "patterns": ["What are healthy cooking oils?", "Benefits of healthy cooking oils", "How to use healthy cooking oils?"],
+        "responses": ["Healthy cooking oils include olive oil, avocado oil, and coconut oil. They provide beneficial fats and can be used in various cooking methods."]
+      },
+      {
+        "tag": "healthy_baking_substitutes",
+        "patterns": ["Healthy baking substitutes", "How to bake healthier?", "Benefits of healthy baking"],
+        "responses": ["Healthy baking substitutes include using applesauce instead of butter, whole wheat flour instead of white flour, and honey instead of sugar."]
+      },
+      {
+        "tag": "low_glycemic_foods",
+        "patterns": ["What are low-glycemic foods?", "Benefits of low-glycemic foods", "Sources of low-glycemic foods"],
+        "responses": ["Low-glycemic foods release sugar slowly into the bloodstream. Examples include oats, legumes, and non-starchy vegetables. They help manage blood sugar levels."]
+      },
+      {
+        "tag": "high_protein_snacks",
+        "patterns": ["High-protein snack ideas", "What are high-protein snacks?", "Benefits of high-protein snacks"],
+        "responses": ["High-protein snacks include Greek yogurt, nuts, and boiled eggs. They help build muscle, keep you full, and maintain energy levels."]
+      },
+      {
+        "tag": "low_calorie_meals",
+        "patterns": ["Low-calorie meal ideas", "What are low-calorie meals?", "Benefits of low-calorie meals"],
+        "responses": ["Low-calorie meals include salads, soups, and stir-fries with lean proteins and vegetables. They support weight management and provide essential nutrients."]
+      },
+      {
+        "tag": "healthy_fast_food_choices",
+        "patterns": ["Healthy fast food options", "How to eat healthy at fast food restaurants?", "Tips for healthy fast food"],
+        "responses": ["Choose grilled over fried options, opt for salads or veggie sides, and avoid sugary drinks. Many fast food places offer healthier choices on their menus."]
+      },
+      {
+        "tag": "dining_out_tips",
+        "patterns": ["Healthy dining out tips", "How to eat healthy when dining out?", "Eating out tips"],
+        "responses": ["When dining out, choose dishes with plenty of vegetables, lean proteins, and whole grains. Ask for dressings and sauces on the side and avoid fried foods."]
+      },
+      {
+        "tag": "healthy_eating_on_a_budget",
+        "patterns": ["Healthy eating on a budget tips", "How to eat healthy on a budget?", "Eating healthy without spending much"],
+        "responses": ["Eat healthy on a budget by planning meals, buying in-season produce, and choosing whole foods over processed ones. Bulk buying and cooking at home also save money."]
+      },
+      {
+        "tag": "food_label_reading",
+        "patterns": ["How to read food labels?", "Food label reading tips", "Understanding food labels"],
+        "responses": ["Read food labels by checking serving sizes, calories, and nutrient information. Pay attention to added sugars, sodium, and unhealthy fats."]
+      },
+      {
+        "tag": "nutritional_education",
+        "patterns": ["What is nutritional education?", "Benefits of nutritional education", "How to access nutritional education?"],
+        "responses": ["Nutritional education provides information about healthy eating habits and nutritional needs. Access through schools, community programs, and online resources."]
+      },
+      {
+        "tag": "food_journaling",
+        "patterns": ["What is food journaling?", "Benefits of food journaling", "How to start food journaling?"],
+        "responses": ["Food journaling involves tracking what you eat and drink. It helps identify eating patterns and make healthier choices. Start by noting down meals and snacks daily."]
+      },
+      {
+        "tag": "nutritional_counseling",
+        "patterns": ["What is nutritional counseling?", "Benefits of nutritional counseling", "How to find a nutrition counselor?"],
+        "responses": ["Nutritional counseling provides personalized dietary advice based on individual health needs. Find a counselor through healthcare providers or nutrition services."]
+      },
+      {
+        "tag": "personalized_diet_plans",
+        "patterns": ["What are personalized diet plans?", "Benefits of personalized diet plans", "How to get a personalized diet plan?"],
+        "responses": ["Personalized diet plans are tailored to individual health goals and needs. Consult a nutritionist or dietitian for a customized plan."]
+      },
+      {
+        "tag": "weight_loss_diet",
+        "patterns": ["What is a weight loss diet?", "Tips for a weight loss diet", "How to follow a weight loss diet?"],
+        "responses": ["A weight loss diet focuses on reducing calorie intake while ensuring nutritional balance. Include plenty of fruits, vegetables, lean proteins, and whole grains."]
+      },
+      {
+        "tag": "weight_gain_diet",
+        "patterns": ["What is a weight gain diet?", "Tips for a weight gain diet", "How to follow a weight gain diet?"],
+        "responses": ["A weight gain diet includes high-calorie, nutrient-dense foods like nuts, avocados, and whole grains. Combine with strength training to build muscle mass."]
+      },
+      {
+        "tag": "sports_nutrition",
+        "patterns": ["What is sports nutrition?", "Benefits of sports nutrition", "How to follow sports nutrition?"],
+        "responses": ["Sports nutrition focuses on optimizing performance and recovery. Include a balance of carbohydrates, proteins, and fats, and stay hydrated."]
+      },
+      {
+        "tag": "energy_boosting_foods",
+        "patterns": ["What are energy-boosting foods?", "Benefits of energy-boosting foods", "How to increase energy with diet?"],
+        "responses": ["Energy-boosting foods include bananas, nuts, and whole grains. They provide sustained energy and improve overall vitality."]
+      },
+      {
+        "tag": "post_workout_nutrition",
+        "patterns": ["What is post-workout nutrition?", "Benefits of post-workout nutrition", "Post-workout nutrition tips"],
+        "responses": ["Post-workout nutrition helps recovery and muscle building. Include protein and carbohydrates in your meal or snack after exercising."]
+      },
+      {
+        "tag": "muscle_building_diet",
+        "patterns": ["What is a muscle-building diet?", "Benefits of a muscle-building diet", "How to follow a muscle-building diet?"],
+        "responses": ["A muscle-building diet includes high-protein foods, healthy fats, and complex carbohydrates. Combine with strength training for optimal results."]
+      },
+      {
+        "tag": "endurance_nutrition",
+        "patterns": ["What is endurance nutrition?", "Benefits of endurance nutrition", "How to follow endurance nutrition?"],
+        "responses": ["Endurance nutrition supports long-duration activities. Include carbohydrates for energy, protein for recovery, and stay hydrated."]
+      },
+      {
+        "tag": "hydration_strategies",
+        "patterns": ["What are hydration strategies?", "Benefits of hydration strategies", "How to stay hydrated?"],
+        "responses": ["Hydration strategies include drinking water regularly, consuming electrolyte-rich drinks during intense exercise, and eating water-rich foods."]
+      },
+      {
+        "tag": "supplements_for_athletes",
+        "patterns": ["What are supplements for athletes?", "Benefits of athletic supplements", "How to choose supplements for athletes?"],
+        "responses": ["Supplements for athletes include protein powders, creatine, and branched-chain amino acids (BCAAs). Consult a healthcare provider before starting any supplement."]
+      },
+      {
+        "tag": "vitamin_deficiency",
+        "patterns": ["What is vitamin deficiency?", "Symptoms of vitamin deficiency", "How to treat vitamin deficiency?"],
+        "responses": ["Vitamin deficiency occurs when you don't get enough vitamins from your diet. Symptoms vary by vitamin and can include fatigue, weakness, and immune issues. Consult a healthcare provider for treatment."]
+      },
+      {
+        "tag": "mineral_deficiency",
+        "patterns": ["What is mineral deficiency?", "Symptoms of mineral deficiency", "How to treat mineral deficiency?"],
+        "responses": ["Mineral deficiency occurs when you don't get enough minerals from your diet. Symptoms vary by mineral and can include bone health issues, fatigue, and muscle cramps. Consult a healthcare provider for treatment."]
+      },
+      {
+        "tag": "iron_rich_foods",
+        "patterns": ["What are iron-rich foods?", "Benefits of iron-rich foods", "Sources of iron"],
+        "responses": ["Iron-rich foods include red meat, spinach, lentils, and fortified cereals. They help prevent anemia and support overall health."]
+      },
+      {
+        "tag": "calcium_rich_foods",
+        "patterns": ["What are calcium-rich foods?", "Benefits of calcium-rich foods", "Sources of calcium"],
+        "responses": ["Calcium-rich foods include dairy products, leafy greens, and almonds. They support bone health and muscle function."]
+      },
+      {
+        "tag": "vitamin_d_sources",
+        "patterns": ["What are sources of vitamin D?", "Benefits of vitamin D", "How to get vitamin D?"],
+        "responses": ["Sources of vitamin D include sunlight, fatty fish, and fortified dairy products. It supports bone health and immune function."]
+      },
+      {
+        "tag": "omega_3_fatty_acids",
+        "patterns": ["What are omega-3 fatty acids?", "Benefits of omega-3 fatty acids", "Sources of omega-3 fatty acids"],
+        "responses": ["Omega-3 fatty acids support heart and brain health. Sources include fatty fish, flaxseeds, and walnuts."]
+      },
+      {
+        "tag": "magnesium_rich_foods",
+        "patterns": ["What are magnesium-rich foods?", "Benefits of magnesium-rich foods", "Sources of magnesium"],
+        "responses": ["Magnesium-rich foods include nuts, seeds, whole grains, and leafy greens. They support muscle and nerve function, and energy production."]
+      },
+      {
+        "tag": "zinc_rich_foods",
+        "patterns": ["What are zinc-rich foods?", "Benefits of zinc-rich foods", "Sources of zinc"],
+        "responses": ["Zinc-rich foods include meat, shellfish, legumes, and seeds. They support immune function, wound healing, and protein synthesis."]
+      },
+      {
+        "tag": "potassium_rich_foods",
+        "patterns": ["What are potassium-rich foods?", "Benefits of potassium-rich foods", "Sources of potassium"],
+        "responses": ["Potassium-rich foods include bananas, potatoes, and avocados. They support heart and muscle function, and help balance fluids."]
+      },
+      {
+        "tag": "healthy_aging_diet",
+        "patterns": ["What is a healthy aging diet?", "Benefits of a healthy aging diet", "How to follow a healthy aging diet?"],
+        "responses": ["A healthy aging diet includes nutrient-dense foods that support overall health. Focus on fruits, vegetables, lean proteins, and whole grains."]
+      },
+      {
+        "tag": "prenatal_nutrition",
+        "patterns": ["What is prenatal nutrition?", "Benefits of prenatal nutrition", "Tips for prenatal nutrition"],
+        "responses": ["Prenatal nutrition supports the health of the mother and baby. Include folic acid, iron, calcium, and protein in your diet. Consult your healthcare provider for personalized advice."]
+      },
+      {
+        "tag": "postnatal_nutrition",
+        "patterns": ["What is postnatal nutrition?", "Benefits of postnatal nutrition", "Tips for postnatal nutrition"],
+        "responses": ["Postnatal nutrition supports recovery and breastfeeding. Focus on nutrient-dense foods, stay hydrated, and consult your healthcare provider for personalized advice."]
+      },
+      {
+        "tag": "infant_nutrition",
+        "patterns": ["What is infant nutrition?", "Benefits of infant nutrition", "Tips for infant nutrition"],
+        "responses": ["Infant nutrition includes breastfeeding or formula feeding, and introducing solid foods at the appropriate age. Ensure a variety of nutrients for healthy growth."]
+      },
+      {
+        "tag": "child_nutrition",
+        "patterns": ["What is child nutrition?", "Benefits of child nutrition", "Tips for child nutrition"],
+        "responses": ["Child nutrition focuses on balanced meals with a variety of food groups. Encourage fruits, vegetables, whole grains, and lean proteins. Limit sugary snacks and drinks."]
+      },
+      {
+        "tag": "adolescent_nutrition",
+        "patterns": ["What is adolescent nutrition?", "Benefits of adolescent nutrition", "Tips for adolescent nutrition"],
+        "responses": ["Adolescent nutrition supports growth and development. Include a balance of carbohydrates, proteins, and fats, and encourage healthy eating habits."]
+      },
+      {
+        "tag": "senior_nutrition",
+        "patterns": ["What is senior nutrition?", "Benefits of senior nutrition", "Tips for senior nutrition"],
+        "responses": ["Senior nutrition focuses on nutrient-dense foods that support health in older adults. Include fiber, calcium, vitamin D, and lean proteins."]
+      },
+      {
+        "tag": "dietary_supplements",
+        "patterns": ["What are dietary supplements?", "Benefits of dietary supplements", "How to choose dietary supplements?"],
+        "responses": ["Dietary supplements include vitamins, minerals, and other nutrients. Choose supplements based on your dietary needs and consult your healthcare provider."]
+      },
+      {
+        "tag": "supplement_safety",
+        "patterns": ["What is supplement safety?", "Tips for supplement safety", "How to use supplements safely?"],
+        "responses": ["Ensure supplement safety by choosing reputable brands, following dosage instructions, and consulting with your healthcare provider before starting any new supplement."]
+      },
+      {
+        "tag": "cooking_for_health",
+        "patterns": ["Tips for cooking for health", "How to cook healthy meals?", "Benefits of cooking for health"],
+        "responses": ["Cook for health by using fresh ingredients, reducing added sugars and salts, and incorporating a variety of food groups into your meals."]
+      },
+      {
+        "tag": "eating_for_longevity",
+        "patterns": ["What is eating for longevity?", "Benefits of eating for longevity", "Tips for eating for longevity"],
+        "responses": ["Eating for longevity focuses on a diet that promotes long-term health. Include plenty of fruits, vegetables, whole grains, and lean proteins, and limit processed foods."]
+      },
+      {
+        "tag": "nutritional_myths",
+        "patterns": ["What are common nutritional myths?", "Debunking nutritional myths", "Nutritional myths and facts"],
+        "responses": ["Common nutritional myths include the idea that all fats are bad and that carbs cause weight gain. It's important to get accurate information from reputable sources."]
+      }
+      
+    
+    ]
+  }
+  
