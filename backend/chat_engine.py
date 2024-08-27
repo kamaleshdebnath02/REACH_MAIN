@@ -177,4 +177,4 @@ def fetch_web_data(url):
         return soup.get_text()
     except Exception as e:
         print(f"Error fetching web data: {e}")
-        return "I couldn't retrieve the information from the web."
+        return "I couldn't retrieve the information from the web3."
